@@ -1,4 +1,4 @@
 "clientId": {
-  "type": "integer",
+  "type": "string",
   @COMMON_PATTERN_UUID_1_JSON@
 }
