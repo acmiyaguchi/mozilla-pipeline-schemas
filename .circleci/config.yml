@@ -29,9 +29,6 @@ jobs:
       - setup_remote_docker
       - run:
           name: Run a comparison report
-          environment:
-            SRC_DATA_BUCKET: telemetry-parquet
-            SRC_DATA_PREFIX: sanitized-landfill-sample/v3
           command: |
             # Get the revisions for comparison. This will compare the tip of
             # the PR against the upstream mozilla:dev.
@@ -41,6 +38,12 @@ jobs:
             # The `checkout` step defaults to $HOME/project (/app/project).
             # Replace the container's submodule with the current state of this repo.
             cd .. && rm -r mozilla-pipeline-schemas && mv project mozilla-pipeline-schemas
+
+            # Fetch data from an updated source
+            pipenv run \
+              python integration.py sync \
+                --data-bucket telemetry-parquet \
+                --data-prefix sanitized-landfill-sample/v3
 
             # Run the comparison report and store the artifacts for future viewing.
             pipenv run \
