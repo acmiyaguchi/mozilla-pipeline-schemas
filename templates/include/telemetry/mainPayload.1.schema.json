@@ -65,8 +65,16 @@
     "log": {
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": { }
+        "type": "array",
+        "items": {
+          "type": [
+            {"type": "string"},
+            {"type": "number"},
+            {"type": "string"},
+            {"type": "string"},
+            {"type": "string"}
+          ]
+        }
       }
     },
     "simpleMeasurements": {
