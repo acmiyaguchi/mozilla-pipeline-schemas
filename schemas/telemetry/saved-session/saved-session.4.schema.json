@@ -1216,6 +1216,10 @@
                         "maxProperties": 30,
                         "properties": {
                           "slices": {
+                            "items": {
+                              "properties": {},
+                              "type": "object"
+                            },
                             "type": [
                               "array",
                               "number"
@@ -1266,6 +1270,10 @@
                         "maxProperties": 30,
                         "properties": {
                           "slices": {
+                            "items": {
+                              "properties": {},
+                              "type": "object"
+                            },
                             "type": [
                               "array",
                               "number"
@@ -1500,6 +1508,10 @@
                         "maxProperties": 30,
                         "properties": {
                           "slices": {
+                            "items": {
+                              "properties": {},
+                              "type": "object"
+                            },
                             "type": [
                               "array",
                               "number"
@@ -1550,6 +1562,10 @@
                         "maxProperties": 30,
                         "properties": {
                           "slices": {
+                            "items": {
+                              "properties": {},
+                              "type": "object"
+                            },
                             "type": [
                               "array",
                               "number"
@@ -1784,6 +1800,10 @@
                         "maxProperties": 30,
                         "properties": {
                           "slices": {
+                            "items": {
+                              "properties": {},
+                              "type": "object"
+                            },
                             "type": [
                               "array",
                               "number"
@@ -1834,6 +1854,10 @@
                         "maxProperties": 30,
                         "properties": {
                           "slices": {
+                            "items": {
+                              "properties": {},
+                              "type": "object"
+                            },
                             "type": [
                               "array",
                               "number"
