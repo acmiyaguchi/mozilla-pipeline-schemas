@@ -67,10 +67,17 @@
       "properties": { }
     },
     "log": {
-      "type": [
-        "array",
-        "object"
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": [
+          {"type": "string"},
+          {"type": "number"},
+          {"type": "string"},
+          {"type": "string"},
+          {"type": "string"}
         ]
+      }
     },
     "simpleMeasurements": {
       "type": "object",
@@ -85,16 +92,18 @@
       "properties": { }
     },
     "threadHangStats": {
-      "type": [
-        "array",
-        "object"
-        ]
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": { }
+      }
     },
     "UIMeasurements": {
-      "type": [
-        "array",
-        "object"
-        ]
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": { }
+      }
     },
     "ver": {
       "type": "integer"
