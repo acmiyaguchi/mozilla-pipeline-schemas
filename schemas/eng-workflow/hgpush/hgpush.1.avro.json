@@ -1,0 +1,72 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": "string",
+      "name": "changesetID"
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "diffstat",
+          "namespace": "root",
+          "fields": [
+            {
+              "type": [
+                "null",
+                "long"
+              ],
+              "name": "additions",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                "long"
+              ],
+              "name": "changedFiles",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                "long"
+              ],
+              "name": "deletions",
+              "default": null
+            }
+          ]
+        }
+      ],
+      "name": "diffstat",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "landingSystem",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "pushDate",
+      "default": null
+    },
+    {
+      "type": "string",
+      "name": "repository"
+    },
+    {
+      "type": "string",
+      "name": "reviewSystemUsed"
+    }
+  ]
+}

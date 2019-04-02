@@ -1,0 +1,49 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": "string",
+      "name": "arch"
+    },
+    {
+      "type": "string",
+      "name": "clientId"
+    },
+    {
+      "type": "string",
+      "name": "device"
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "name": "experiments",
+      "default": null
+    },
+    {
+      "type": "string",
+      "name": "locale"
+    },
+    {
+      "type": "string",
+      "name": "os"
+    },
+    {
+      "type": "string",
+      "name": "osversion"
+    },
+    {
+      "type": "long",
+      "name": "seq"
+    },
+    {
+      "type": "long",
+      "name": "v"
+    }
+  ]
+}

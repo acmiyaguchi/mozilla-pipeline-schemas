@@ -1,0 +1,312 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "arch",
+      "default": null
+    },
+    {
+      "type": "string",
+      "name": "clientId"
+    },
+    {
+      "type": "string",
+      "name": "createdDate"
+    },
+    {
+      "type": "long",
+      "name": "createdTimestamp"
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "device",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "map",
+          "values": "string"
+        }
+      ],
+      "name": "experiments",
+      "default": null
+    },
+    {
+      "type": "string",
+      "name": "locale"
+    },
+    {
+      "type": {
+        "type": "map",
+        "values": {
+          "type": "record",
+          "name": "value",
+          "namespace": "root.metrics",
+          "fields": [
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": {
+                    "type": "record",
+                    "name": "value",
+                    "namespace": "root.metrics.value.histograms",
+                    "fields": [
+                      {
+                        "type": [
+                          "null",
+                          "long"
+                        ],
+                        "name": "bucket_count",
+                        "default": null
+                      },
+                      {
+                        "type": [
+                          "null",
+                          "long"
+                        ],
+                        "name": "histogram_type",
+                        "default": null
+                      },
+                      {
+                        "type": [
+                          "null",
+                          "double"
+                        ],
+                        "name": "log_sum",
+                        "default": null
+                      },
+                      {
+                        "type": [
+                          "null",
+                          "double"
+                        ],
+                        "name": "log_sum_squares",
+                        "default": null
+                      },
+                      {
+                        "type": [
+                          "null",
+                          {
+                            "type": "array",
+                            "items": "long"
+                          }
+                        ],
+                        "name": "range",
+                        "default": null
+                      },
+                      {
+                        "type": [
+                          "null",
+                          "long"
+                        ],
+                        "name": "sum",
+                        "default": null
+                      },
+                      {
+                        "type": [
+                          "null",
+                          "long"
+                        ],
+                        "name": "sum_squares_hi",
+                        "default": null
+                      },
+                      {
+                        "type": [
+                          "null",
+                          "long"
+                        ],
+                        "name": "sum_squares_lo",
+                        "default": null
+                      },
+                      {
+                        "type": [
+                          "null",
+                          {
+                            "type": "map",
+                            "values": "long"
+                          }
+                        ],
+                        "name": "values",
+                        "default": null
+                      }
+                    ]
+                  }
+                }
+              ],
+              "name": "histograms",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": {
+                    "type": "map",
+                    "values": {
+                      "type": "record",
+                      "name": "value",
+                      "namespace": "root.metrics.value.keyedHistograms.value",
+                      "fields": [
+                        {
+                          "type": [
+                            "null",
+                            "long"
+                          ],
+                          "name": "bucket_count",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "long"
+                          ],
+                          "name": "histogram_type",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "double"
+                          ],
+                          "name": "log_sum",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "double"
+                          ],
+                          "name": "log_sum_squares",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            {
+                              "type": "array",
+                              "items": "long"
+                            }
+                          ],
+                          "name": "range",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "long"
+                          ],
+                          "name": "sum",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "long"
+                          ],
+                          "name": "sum_squares_hi",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "long"
+                          ],
+                          "name": "sum_squares_lo",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            {
+                              "type": "map",
+                              "values": "long"
+                            }
+                          ],
+                          "name": "values",
+                          "default": null
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "name": "keyedHistograms",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": {
+                    "type": "map",
+                    "values": "string"
+                  }
+                }
+              ],
+              "name": "keyedScalars",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": "string"
+                }
+              ],
+              "name": "scalars",
+              "default": null
+            }
+          ]
+        }
+      },
+      "name": "metrics"
+    },
+    {
+      "type": "string",
+      "name": "os"
+    },
+    {
+      "type": "string",
+      "name": "osversion"
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "profileDate",
+      "default": null
+    },
+    {
+      "type": "long",
+      "name": "seq"
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "tz",
+      "default": null
+    },
+    {
+      "type": "long",
+      "name": "v"
+    }
+  ]
+}

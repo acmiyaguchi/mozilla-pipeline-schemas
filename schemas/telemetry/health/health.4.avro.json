@@ -1,0 +1,160 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": {
+        "type": "record",
+        "name": "application",
+        "namespace": "root",
+        "fields": [
+          {
+            "type": "string",
+            "name": "architecture"
+          },
+          {
+            "type": "string",
+            "name": "buildId"
+          },
+          {
+            "type": "string",
+            "name": "channel"
+          },
+          {
+            "type": [
+              "null",
+              "string"
+            ],
+            "name": "displayVersion",
+            "default": null
+          },
+          {
+            "type": "string",
+            "name": "name"
+          },
+          {
+            "type": "string",
+            "name": "platformVersion"
+          },
+          {
+            "type": "string",
+            "name": "vendor"
+          },
+          {
+            "type": "string",
+            "name": "version"
+          },
+          {
+            "type": "string",
+            "name": "xpcomAbi"
+          }
+        ]
+      },
+      "name": "application"
+    },
+    {
+      "type": "string",
+      "name": "clientId"
+    },
+    {
+      "type": "string",
+      "name": "creationDate"
+    },
+    {
+      "type": "string",
+      "name": "id"
+    },
+    {
+      "type": {
+        "type": "record",
+        "name": "payload",
+        "namespace": "root",
+        "fields": [
+          {
+            "type": {
+              "type": "record",
+              "name": "os",
+              "namespace": "root.payload",
+              "fields": [
+                {
+                  "type": [
+                    "null",
+                    "string"
+                  ],
+                  "name": "name",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    "string"
+                  ],
+                  "name": "version",
+                  "default": null
+                }
+              ]
+            },
+            "name": "os"
+          },
+          {
+            "type": [
+              "null",
+              {
+                "type": "record",
+                "name": "pingDiscardedForSize",
+                "namespace": "root.payload",
+                "fields": [
+                  {
+                    "type": [
+                      "null",
+                      "double"
+                    ],
+                    "name": "additionalProperties",
+                    "default": null
+                  }
+                ]
+              }
+            ],
+            "name": "pingDiscardedForSize",
+            "default": null
+          },
+          {
+            "type": "string",
+            "name": "reason"
+          },
+          {
+            "type": [
+              "null",
+              {
+                "type": "record",
+                "name": "sendFailure",
+                "namespace": "root.payload",
+                "fields": [
+                  {
+                    "type": [
+                      "null",
+                      "double"
+                    ],
+                    "name": "additionalProperties",
+                    "default": null
+                  }
+                ]
+              }
+            ],
+            "name": "sendFailure",
+            "default": null
+          }
+        ]
+      },
+      "name": "payload"
+    },
+    {
+      "type": "string",
+      "name": "type"
+    },
+    {
+      "type": "double",
+      "name": "version"
+    }
+  ]
+}

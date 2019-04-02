@@ -1,0 +1,370 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "_64bit_build",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "_64bit_os",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "admin_user",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "attribution",
+      "default": null
+    },
+    {
+      "type": "string",
+      "name": "build_channel"
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "build_id",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "bytes_downloaded",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "default_path",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "disk_space_error",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "download_ip",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "download_latency",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "download_retries",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "download_size",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "download_time",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "file_error",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "finish_time",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "from_msi",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "had_old_install",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "install_time",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "install_timeout",
+      "default": null
+    },
+    {
+      "type": "string",
+      "name": "installer_type"
+    },
+    {
+      "type": "string",
+      "name": "installer_version"
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "intro_time",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "locale",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "manual_download",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "new_default",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "new_launched",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "no_write_access",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "old_build_id",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "old_default",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "old_running",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "old_version",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "options_time",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "os_version",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "out_of_retries",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "preinstall_time",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "profile_cleanup_prompt",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "profile_cleanup_requested",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "server_os",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "service_pack",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "set_default",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "sig_not_trusted",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "sig_unexpected",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "succeeded",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "update_channel",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "user_cancelled",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "version",
+      "default": null
+    }
+  ]
+}

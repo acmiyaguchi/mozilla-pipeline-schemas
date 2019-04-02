@@ -1,0 +1,224 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": {
+        "type": "array",
+        "items": "string"
+      },
+      "name": "argv"
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "build_attrs",
+          "namespace": "root",
+          "fields": [
+            {
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "name": "clobber",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                "double"
+              ],
+              "name": "cpu_percent",
+              "default": null
+            }
+          ]
+        }
+      ],
+      "name": "build_attrs",
+      "default": null
+    },
+    {
+      "type": {
+        "type": "record",
+        "name": "build_opts",
+        "namespace": "root",
+        "fields": [
+          {
+            "type": [
+              "null",
+              "boolean"
+            ],
+            "name": "artifact",
+            "default": null
+          },
+          {
+            "type": [
+              "null",
+              "boolean"
+            ],
+            "name": "ccache",
+            "default": null
+          },
+          {
+            "type": [
+              "null",
+              "string"
+            ],
+            "name": "compiler",
+            "default": null
+          },
+          {
+            "type": [
+              "null",
+              "boolean"
+            ],
+            "name": "debug",
+            "default": null
+          },
+          {
+            "type": [
+              "null",
+              "boolean"
+            ],
+            "name": "icecream",
+            "default": null
+          },
+          {
+            "type": [
+              "null",
+              "boolean"
+            ],
+            "name": "opt",
+            "default": null
+          },
+          {
+            "type": [
+              "null",
+              "boolean"
+            ],
+            "name": "sccache",
+            "default": null
+          }
+        ]
+      },
+      "name": "build_opts"
+    },
+    {
+      "type": "string",
+      "name": "client_id"
+    },
+    {
+      "type": "string",
+      "name": "command"
+    },
+    {
+      "type": "double",
+      "name": "duration_ms"
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "exception",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "type": "record",
+            "name": "items",
+            "namespace": "root.file_types_changed",
+            "fields": [
+              {
+                "type": "double",
+                "name": "count"
+              },
+              {
+                "type": "string",
+                "name": "ext"
+              }
+            ]
+          }
+        }
+      ],
+      "name": "file_types_changed",
+      "default": null
+    },
+    {
+      "type": "boolean",
+      "name": "success"
+    },
+    {
+      "type": {
+        "type": "record",
+        "name": "system",
+        "namespace": "root",
+        "fields": [
+          {
+            "type": [
+              "null",
+              "string"
+            ],
+            "name": "cpu_brand",
+            "default": null
+          },
+          {
+            "type": [
+              "null",
+              "boolean"
+            ],
+            "name": "drive_is_ssd",
+            "default": null
+          },
+          {
+            "type": [
+              "null",
+              "double"
+            ],
+            "name": "logical_cores",
+            "default": null
+          },
+          {
+            "type": [
+              "null",
+              "double"
+            ],
+            "name": "memory_gb",
+            "default": null
+          },
+          {
+            "type": "string",
+            "name": "os"
+          },
+          {
+            "type": [
+              "null",
+              "double"
+            ],
+            "name": "physical_cores",
+            "default": null
+          },
+          {
+            "type": [
+              "null",
+              "boolean"
+            ],
+            "name": "virtual_machine",
+            "default": null
+          }
+        ]
+      },
+      "name": "system"
+    },
+    {
+      "type": "string",
+      "name": "time"
+    }
+  ]
+}

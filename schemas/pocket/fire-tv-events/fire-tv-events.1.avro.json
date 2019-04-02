@@ -1,0 +1,53 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": "long",
+      "name": "created"
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "device",
+      "default": null
+    },
+    {
+      "type": {
+        "type": "array",
+        "items": "string"
+      },
+      "name": "events"
+    },
+    {
+      "type": "string",
+      "name": "locale"
+    },
+    {
+      "type": "string",
+      "name": "os"
+    },
+    {
+      "type": "string",
+      "name": "osversion"
+    },
+    {
+      "type": "string",
+      "name": "pocketId"
+    },
+    {
+      "type": "long",
+      "name": "processStartTimestamp"
+    },
+    {
+      "type": "long",
+      "name": "seq"
+    },
+    {
+      "type": "long",
+      "name": "v"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": {
+        "type": "map",
+        "values": {
+          "type": "record",
+          "name": "value",
+          "namespace": "root.results",
+          "fields": [
+            {
+              "type": "long",
+              "name": "error_count"
+            },
+            {
+              "type": "double",
+              "name": "error_rate"
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": "long"
+                }
+              ],
+              "name": "errors",
+              "default": null
+            },
+            {
+              "type": "double",
+              "name": "time"
+            },
+            {
+              "type": "long",
+              "name": "total"
+            }
+          ]
+        }
+      },
+      "name": "results"
+    }
+  ]
+}

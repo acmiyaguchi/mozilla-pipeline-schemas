@@ -1,0 +1,235 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "build_id",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "build_version",
+      "default": null
+    },
+    {
+      "type": "long",
+      "name": "cpu_arch"
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "creationDate",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "id",
+      "default": null
+    },
+    {
+      "type": {
+        "type": "record",
+        "name": "launcher_error",
+        "namespace": "root",
+        "fields": [
+          {
+            "type": [
+              "null",
+              "long"
+            ],
+            "name": "hresult",
+            "default": null
+          },
+          {
+            "type": [
+              "null",
+              "string"
+            ],
+            "name": "source_file",
+            "default": null
+          },
+          {
+            "type": [
+              "null",
+              "long"
+            ],
+            "name": "source_line",
+            "default": null
+          }
+        ]
+      },
+      "name": "launcher_error"
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "memory",
+          "namespace": "root",
+          "fields": [
+            {
+              "type": [
+                "null",
+                "long"
+              ],
+              "name": "avail_page_file",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                "long"
+              ],
+              "name": "avail_phys",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                "long"
+              ],
+              "name": "avail_virt",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                "long"
+              ],
+              "name": "total_phys",
+              "default": null
+            }
+          ]
+        }
+      ],
+      "name": "memory",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "map",
+          "values": "string"
+        }
+      ],
+      "name": "modules",
+      "default": null
+    },
+    {
+      "type": "long",
+      "name": "num_logical_cpus"
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "os_locale",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "os_version",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "security",
+          "namespace": "root",
+          "fields": [
+            {
+              "type": [
+                "null",
+                {
+                  "type": "array",
+                  "items": "string"
+                }
+              ],
+              "name": "antispyware",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "array",
+                  "items": "string"
+                }
+              ],
+              "name": "av",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "array",
+                  "items": "string"
+                }
+              ],
+              "name": "firewall",
+              "default": null
+            }
+          ]
+        }
+      ],
+      "name": "security",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "server_os",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "name": "signatures",
+      "default": null
+    },
+    {
+      "type": "string",
+      "name": "type"
+    },
+    {
+      "type": "string",
+      "name": "update_channel"
+    },
+    {
+      "type": "double",
+      "name": "version"
+    },
+    {
+      "type": "string",
+      "name": "xpcom_abi"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "browser",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "browser_version",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "domain",
+      "default": null
+    },
+    {
+      "type": "string",
+      "name": "event"
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "os",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "os_version",
+      "default": null
+    },
+    {
+      "type": "string",
+      "name": "property"
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "request_uri",
+      "default": null
+    }
+  ]
+}

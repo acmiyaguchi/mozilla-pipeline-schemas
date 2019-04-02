@@ -1,0 +1,178 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": {
+        "type": "record",
+        "name": "application",
+        "namespace": "root",
+        "fields": [
+          {
+            "type": "string",
+            "name": "architecture"
+          },
+          {
+            "type": "string",
+            "name": "buildId"
+          },
+          {
+            "type": "string",
+            "name": "channel"
+          },
+          {
+            "type": [
+              "null",
+              "string"
+            ],
+            "name": "displayVersion",
+            "default": null
+          },
+          {
+            "type": "string",
+            "name": "name"
+          },
+          {
+            "type": "string",
+            "name": "platformVersion"
+          },
+          {
+            "type": "string",
+            "name": "vendor"
+          },
+          {
+            "type": "string",
+            "name": "version"
+          },
+          {
+            "type": "string",
+            "name": "xpcomAbi"
+          }
+        ]
+      },
+      "name": "application"
+    },
+    {
+      "type": "string",
+      "name": "clientId"
+    },
+    {
+      "type": "string",
+      "name": "creationDate"
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "engagementType",
+      "default": null
+    },
+    {
+      "type": "string",
+      "name": "id"
+    },
+    {
+      "type": {
+        "type": "record",
+        "name": "payload",
+        "namespace": "root",
+        "fields": [
+          {
+            "type": [
+              "null",
+              "long"
+            ],
+            "name": "closedTS",
+            "default": null
+          },
+          {
+            "type": [
+              "null",
+              "long"
+            ],
+            "name": "engagedTS",
+            "default": null
+          },
+          {
+            "type": [
+              "null",
+              "long"
+            ],
+            "name": "expiredTS",
+            "default": null
+          },
+          {
+            "type": "string",
+            "name": "flowId"
+          },
+          {
+            "type": [
+              "null",
+              "long"
+            ],
+            "name": "learnMoreTS",
+            "default": null
+          },
+          {
+            "type": "long",
+            "name": "offeredTS"
+          },
+          {
+            "type": [
+              "null",
+              "long"
+            ],
+            "name": "score",
+            "default": null
+          },
+          {
+            "type": "string",
+            "name": "surveyId"
+          },
+          {
+            "type": "string",
+            "name": "surveyVersion"
+          },
+          {
+            "type": [
+              "null",
+              "boolean"
+            ],
+            "name": "testing",
+            "default": null
+          },
+          {
+            "type": "double",
+            "name": "version"
+          },
+          {
+            "type": [
+              "null",
+              "long"
+            ],
+            "name": "votedTS",
+            "default": null
+          },
+          {
+            "type": [
+              "null",
+              "long"
+            ],
+            "name": "windowClosedTS",
+            "default": null
+          }
+        ]
+      },
+      "name": "payload"
+    },
+    {
+      "type": "string",
+      "name": "type"
+    },
+    {
+      "type": "double",
+      "name": "version"
+    }
+  ]
+}

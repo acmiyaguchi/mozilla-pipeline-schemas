@@ -1,0 +1,790 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": {
+        "type": "record",
+        "name": "application",
+        "namespace": "root",
+        "fields": [
+          {
+            "type": [
+              "null",
+              {
+                "type": "record",
+                "name": "addons",
+                "namespace": "root.application",
+                "fields": [
+                  {
+                    "type": [
+                      "null",
+                      {
+                        "type": "map",
+                        "values": {
+                          "type": "record",
+                          "name": "value",
+                          "namespace": "root.application.addons.activeAddons",
+                          "fields": [
+                            {
+                              "type": [
+                                "null",
+                                "boolean"
+                              ],
+                              "name": "appDisabled",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "boolean"
+                              ],
+                              "name": "blocklisted",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "description",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "foreignInstall",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "boolean"
+                              ],
+                              "name": "hasBinaryComponents",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "long"
+                              ],
+                              "name": "installDay",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "name",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "long"
+                              ],
+                              "name": "scope",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "long"
+                              ],
+                              "name": "signedState",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "type",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "long"
+                              ],
+                              "name": "updateDay",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "userDisabled",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "version",
+                              "default": null
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    "name": "activeAddons",
+                    "default": null
+                  },
+                  {
+                    "type": [
+                      "null",
+                      {
+                        "type": "record",
+                        "name": "activeExperiment",
+                        "namespace": "root.application.addons",
+                        "fields": [
+                          {
+                            "type": [
+                              "null",
+                              "string"
+                            ],
+                            "name": "branch",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "string"
+                            ],
+                            "name": "id",
+                            "default": null
+                          }
+                        ]
+                      }
+                    ],
+                    "name": "activeExperiment",
+                    "default": null
+                  },
+                  {
+                    "type": [
+                      "null",
+                      {
+                        "type": "map",
+                        "values": {
+                          "type": "record",
+                          "name": "value",
+                          "namespace": "root.application.addons.activeGMPlugins",
+                          "fields": [
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "applyBackgroundUpdates",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "boolean"
+                              ],
+                              "name": "userDisabled",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "version",
+                              "default": null
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    "name": "activeGMPlugins",
+                    "default": null
+                  },
+                  {
+                    "type": [
+                      "null",
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "record",
+                          "name": "items",
+                          "namespace": "root.application.addons.activePlugins",
+                          "fields": [
+                            {
+                              "type": [
+                                "null",
+                                "boolean"
+                              ],
+                              "name": "blocklisted",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "boolean"
+                              ],
+                              "name": "clicktoplay",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "description",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "boolean"
+                              ],
+                              "name": "disabled",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                {
+                                  "type": "array",
+                                  "items": "string"
+                                }
+                              ],
+                              "name": "mimeTypes",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "name",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "long"
+                              ],
+                              "name": "updateDay",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "version",
+                              "default": null
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    "name": "activePlugins",
+                    "default": null
+                  },
+                  {
+                    "type": [
+                      "null",
+                      "string"
+                    ],
+                    "name": "persona",
+                    "default": null
+                  },
+                  {
+                    "type": [
+                      "null",
+                      {
+                        "type": "record",
+                        "name": "theme",
+                        "namespace": "root.application.addons",
+                        "fields": [
+                          {
+                            "type": [
+                              "null",
+                              "boolean"
+                            ],
+                            "name": "appDisabled",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "boolean"
+                            ],
+                            "name": "blocklisted",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "string"
+                            ],
+                            "name": "description",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "string"
+                            ],
+                            "name": "foreignInstall",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "boolean"
+                            ],
+                            "name": "hasBinaryComponents",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "string"
+                            ],
+                            "name": "id",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "long"
+                            ],
+                            "name": "installDay",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "string"
+                            ],
+                            "name": "name",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "long"
+                            ],
+                            "name": "scope",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "long"
+                            ],
+                            "name": "updateDay",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "boolean"
+                            ],
+                            "name": "userDisabled",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "string"
+                            ],
+                            "name": "version",
+                            "default": null
+                          }
+                        ]
+                      }
+                    ],
+                    "name": "theme",
+                    "default": null
+                  }
+                ]
+              }
+            ],
+            "name": "addons",
+            "default": null
+          },
+          {
+            "type": "string",
+            "name": "architecture"
+          },
+          {
+            "type": "string",
+            "name": "buildId"
+          },
+          {
+            "type": "string",
+            "name": "channel"
+          },
+          {
+            "type": "string",
+            "name": "name"
+          },
+          {
+            "type": "string",
+            "name": "platformVersion"
+          },
+          {
+            "type": "string",
+            "name": "version"
+          }
+        ]
+      },
+      "name": "application"
+    },
+    {
+      "type": "string",
+      "name": "clientId"
+    },
+    {
+      "type": "string",
+      "name": "creationDate"
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "environment",
+          "namespace": "root",
+          "fields": [
+            {
+              "type": [
+                "null",
+                {
+                  "type": "record",
+                  "name": "profile",
+                  "namespace": "root.environment",
+                  "fields": [
+                    {
+                      "type": [
+                        "null",
+                        "long"
+                      ],
+                      "name": "creationDate",
+                      "default": null
+                    },
+                    {
+                      "type": [
+                        "null",
+                        "long"
+                      ],
+                      "name": "resetDate",
+                      "default": null
+                    }
+                  ]
+                }
+              ],
+              "name": "profile",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "record",
+                  "name": "settings",
+                  "namespace": "root.environment",
+                  "fields": [
+                    {
+                      "type": [
+                        "null",
+                        "boolean"
+                      ],
+                      "name": "blocklistEnabled",
+                      "default": null
+                    },
+                    {
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "name": "defaultSearchEngine",
+                      "default": null
+                    },
+                    {
+                      "type": [
+                        "null",
+                        {
+                          "type": "record",
+                          "name": "defaultSearchEngineData",
+                          "namespace": "root.environment.settings",
+                          "fields": [
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "loadPath",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "name",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "origin",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "submissionURL",
+                              "default": null
+                            }
+                          ]
+                        }
+                      ],
+                      "name": "defaultSearchEngineData",
+                      "default": null
+                    },
+                    {
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "name": "e10sCohort",
+                      "default": null
+                    },
+                    {
+                      "type": [
+                        "null",
+                        "boolean"
+                      ],
+                      "name": "e10sEnabled",
+                      "default": null
+                    },
+                    {
+                      "type": [
+                        "null",
+                        "boolean"
+                      ],
+                      "name": "isDefaultBrowser",
+                      "default": null
+                    },
+                    {
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "name": "locale",
+                      "default": null
+                    },
+                    {
+                      "type": [
+                        "null",
+                        "boolean"
+                      ],
+                      "name": "telemetryEnabled",
+                      "default": null
+                    },
+                    {
+                      "type": [
+                        "null",
+                        {
+                          "type": "record",
+                          "name": "update",
+                          "namespace": "root.environment.settings",
+                          "fields": [
+                            {
+                              "type": [
+                                "null",
+                                "boolean"
+                              ],
+                              "name": "autoDownload",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "channel",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "boolean"
+                              ],
+                              "name": "enabled",
+                              "default": null
+                            }
+                          ]
+                        }
+                      ],
+                      "name": "update",
+                      "default": null
+                    }
+                  ]
+                }
+              ],
+              "name": "settings",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "record",
+                  "name": "system",
+                  "namespace": "root.environment",
+                  "fields": [
+                    {
+                      "type": [
+                        "null",
+                        {
+                          "type": "record",
+                          "name": "os",
+                          "namespace": "root.environment.system",
+                          "fields": [
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "locale",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "name",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "version",
+                              "default": null
+                            }
+                          ]
+                        }
+                      ],
+                      "name": "os",
+                      "default": null
+                    }
+                  ]
+                }
+              ],
+              "name": "system",
+              "default": null
+            }
+          ]
+        }
+      ],
+      "name": "environment",
+      "default": null
+    },
+    {
+      "type": "string",
+      "name": "id"
+    },
+    {
+      "type": {
+        "type": "record",
+        "name": "payload",
+        "namespace": "root",
+        "fields": [
+          {
+            "type": "string",
+            "name": "addon_version"
+          },
+          {
+            "type": "string",
+            "name": "branch"
+          },
+          {
+            "type": {
+              "type": "record",
+              "name": "data",
+              "namespace": "root.payload",
+              "fields": [
+                {
+                  "type": [
+                    "null",
+                    "string"
+                  ],
+                  "name": "attributes",
+                  "default": null
+                },
+                {
+                  "type": "string",
+                  "name": "study_state"
+                },
+                {
+                  "type": [
+                    "null",
+                    "string"
+                  ],
+                  "name": "study_state_fullname",
+                  "default": null
+                }
+              ]
+            },
+            "name": "data"
+          },
+          {
+            "type": "string",
+            "name": "shield_version"
+          },
+          {
+            "type": "string",
+            "name": "study_name"
+          },
+          {
+            "type": [
+              "null",
+              "boolean"
+            ],
+            "name": "testing",
+            "default": null
+          },
+          {
+            "type": "string",
+            "name": "type"
+          },
+          {
+            "type": "long",
+            "name": "version"
+          }
+        ]
+      },
+      "name": "payload"
+    },
+    {
+      "type": "string",
+      "name": "type"
+    },
+    {
+      "type": "double",
+      "name": "version"
+    }
+  ]
+}

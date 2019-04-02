@@ -1,0 +1,172 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": "string",
+      "name": "appUpdateChannel"
+    },
+    {
+      "type": "string",
+      "name": "appVersion"
+    },
+    {
+      "type": "string",
+      "name": "defaultSearchEngine"
+    },
+    {
+      "type": "string",
+      "name": "locale"
+    },
+    {
+      "type": "string",
+      "name": "os"
+    },
+    {
+      "type": "string",
+      "name": "osVersion"
+    },
+    {
+      "type": {
+        "type": "record",
+        "name": "pioneerAddonMetadata",
+        "namespace": "root",
+        "fields": [
+          {
+            "type": "string",
+            "name": "addonId"
+          },
+          {
+            "type": "string",
+            "name": "addonVersion"
+          },
+          {
+            "type": "string",
+            "name": "branch"
+          },
+          {
+            "type": "string",
+            "name": "packetVersion"
+          },
+          {
+            "type": "string",
+            "name": "pioneerUtilsVersion"
+          },
+          {
+            "type": "string",
+            "name": "studyName"
+          },
+          {
+            "type": "boolean",
+            "name": "testing"
+          },
+          {
+            "type": "string",
+            "name": "type"
+          }
+        ]
+      },
+      "name": "pioneerAddonMetadata"
+    },
+    {
+      "type": "string",
+      "name": "placesBookmarksCount"
+    },
+    {
+      "type": "string",
+      "name": "placesPagesCount"
+    },
+    {
+      "type": "string",
+      "name": "profileCreationDate"
+    },
+    {
+      "type": "string",
+      "name": "profileSubsessionCounter"
+    },
+    {
+      "type": "string",
+      "name": "searchCounts"
+    },
+    {
+      "type": "string",
+      "name": "spbeMaxConcurrentTabCount"
+    },
+    {
+      "type": "string",
+      "name": "spbeMaxConcurrentWindowCount"
+    },
+    {
+      "type": "string",
+      "name": "spbeNavigationAboutNewtab"
+    },
+    {
+      "type": "string",
+      "name": "spbeNavigationContextmenu"
+    },
+    {
+      "type": "string",
+      "name": "spbeNavigationSearchbar"
+    },
+    {
+      "type": "string",
+      "name": "spbeNavigationUrlbar"
+    },
+    {
+      "type": "string",
+      "name": "spbeTabOpenEventCount"
+    },
+    {
+      "type": "string",
+      "name": "spbeTotalUriCount"
+    },
+    {
+      "type": "string",
+      "name": "spbeUnfilteredUriCount"
+    },
+    {
+      "type": "string",
+      "name": "spbeUniqueDomainsCount"
+    },
+    {
+      "type": "string",
+      "name": "spbeWindowOpenEventCount"
+    },
+    {
+      "type": "string",
+      "name": "subsessionStartDate"
+    },
+    {
+      "type": "string",
+      "name": "systemCpuCores"
+    },
+    {
+      "type": "string",
+      "name": "systemCpuSpeedMhz"
+    },
+    {
+      "type": "string",
+      "name": "systemGfxMonitors1ScreenWidth"
+    },
+    {
+      "type": "string",
+      "name": "systemGfxMonitors1ScreenWidthZeroIndexed"
+    },
+    {
+      "type": "string",
+      "name": "systemMemoryMb"
+    },
+    {
+      "type": "string",
+      "name": "timezoneOffest"
+    },
+    {
+      "type": "string",
+      "name": "totalTime"
+    },
+    {
+      "type": "string",
+      "name": "uptime"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "adHocTablesDir",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "apiCall",
+      "default": null
+    },
+    {
+      "type": "string",
+      "name": "apiVersion"
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "detectedUri",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "detectedVersion",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "name",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "owner",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "partition",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "query",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "sourcesJson",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "sqlTableName",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "tableName",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "uri",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "version",
+      "default": null
+    }
+  ]
+}

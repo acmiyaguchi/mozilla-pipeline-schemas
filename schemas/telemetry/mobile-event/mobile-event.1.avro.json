@@ -1,0 +1,114 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "arch",
+      "default": null
+    },
+    {
+      "type": "string",
+      "name": "clientId"
+    },
+    {
+      "type": "long",
+      "name": "created"
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "createdDate",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "createdTimestamp",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "device",
+      "default": null
+    },
+    {
+      "type": {
+        "type": "array",
+        "items": "string"
+      },
+      "name": "events"
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "map",
+          "values": "string"
+        }
+      ],
+      "name": "experiments",
+      "default": null
+    },
+    {
+      "type": "string",
+      "name": "locale"
+    },
+    {
+      "type": "string",
+      "name": "os"
+    },
+    {
+      "type": "string",
+      "name": "osversion"
+    },
+    {
+      "type": "long",
+      "name": "processStartTimestamp"
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "profileDate",
+      "default": null
+    },
+    {
+      "type": "long",
+      "name": "seq"
+    },
+    {
+      "type": {
+        "type": "map",
+        "values": [
+          "null",
+          "string"
+        ]
+      },
+      "name": "settings"
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "tz",
+      "default": null
+    },
+    {
+      "type": "long",
+      "name": "v"
+    }
+  ]
+}

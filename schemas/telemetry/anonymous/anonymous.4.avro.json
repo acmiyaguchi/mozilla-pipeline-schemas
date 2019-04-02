@@ -1,0 +1,110 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "application",
+          "namespace": "root",
+          "fields": [
+            {
+              "type": "string",
+              "name": "architecture"
+            },
+            {
+              "type": "string",
+              "name": "buildId"
+            },
+            {
+              "type": "string",
+              "name": "channel"
+            },
+            {
+              "type": [
+                "null",
+                "string"
+              ],
+              "name": "displayVersion",
+              "default": null
+            },
+            {
+              "type": "string",
+              "name": "name"
+            },
+            {
+              "type": "string",
+              "name": "platformVersion"
+            },
+            {
+              "type": "string",
+              "name": "vendor"
+            },
+            {
+              "type": "string",
+              "name": "version"
+            },
+            {
+              "type": "string",
+              "name": "xpcomAbi"
+            }
+          ]
+        }
+      ],
+      "name": "application",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "creationDate",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "id",
+      "default": null
+    },
+    {
+      "type": {
+        "type": "record",
+        "name": "payload",
+        "namespace": "root",
+        "fields": [
+          {
+            "type": [
+              "null",
+              "string"
+            ],
+            "name": "client",
+            "default": null
+          }
+        ]
+      },
+      "name": "payload"
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "type",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "version",
+      "default": null
+    }
+  ]
+}

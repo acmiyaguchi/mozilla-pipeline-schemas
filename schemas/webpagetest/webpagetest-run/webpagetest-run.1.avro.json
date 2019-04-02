@@ -1,0 +1,81 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": "string",
+      "name": "appName"
+    },
+    {
+      "type": "string",
+      "name": "channel"
+    },
+    {
+      "type": "string",
+      "name": "connection"
+    },
+    {
+      "type": {
+        "type": "map",
+        "values": {
+          "type": "record",
+          "name": "value",
+          "namespace": "root.metrics",
+          "fields": [
+            {
+              "type": {
+                "type": "record",
+                "name": "firstView",
+                "namespace": "root.metrics.value",
+                "fields": [
+                  {
+                    "type": [
+                      "null",
+                      "double"
+                    ],
+                    "name": "median",
+                    "default": null
+                  },
+                  {
+                    "type": [
+                      "null",
+                      "double"
+                    ],
+                    "name": "standardDeviation",
+                    "default": null
+                  }
+                ]
+              },
+              "name": "firstView"
+            }
+          ]
+        }
+      },
+      "name": "metrics"
+    },
+    {
+      "type": "string",
+      "name": "platform"
+    },
+    {
+      "type": "string",
+      "name": "runId"
+    },
+    {
+      "type": "string",
+      "name": "runner"
+    },
+    {
+      "type": "string",
+      "name": "sessionState"
+    },
+    {
+      "type": "string",
+      "name": "url"
+    },
+    {
+      "type": "string",
+      "name": "version"
+    }
+  ]
+}

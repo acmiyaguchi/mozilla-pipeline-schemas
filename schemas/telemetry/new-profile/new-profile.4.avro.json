@@ -1,0 +1,1808 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": {
+        "type": "record",
+        "name": "application",
+        "namespace": "root",
+        "fields": [
+          {
+            "type": "string",
+            "name": "architecture"
+          },
+          {
+            "type": "string",
+            "name": "buildId"
+          },
+          {
+            "type": "string",
+            "name": "channel"
+          },
+          {
+            "type": [
+              "null",
+              "string"
+            ],
+            "name": "displayVersion",
+            "default": null
+          },
+          {
+            "type": "string",
+            "name": "name"
+          },
+          {
+            "type": "string",
+            "name": "platformVersion"
+          },
+          {
+            "type": "string",
+            "name": "vendor"
+          },
+          {
+            "type": "string",
+            "name": "version"
+          },
+          {
+            "type": "string",
+            "name": "xpcomAbi"
+          }
+        ]
+      },
+      "name": "application"
+    },
+    {
+      "type": "string",
+      "name": "clientId"
+    },
+    {
+      "type": "string",
+      "name": "creationDate"
+    },
+    {
+      "type": {
+        "type": "record",
+        "name": "environment",
+        "namespace": "root",
+        "fields": [
+          {
+            "type": [
+              "null",
+              {
+                "type": "record",
+                "name": "addons",
+                "namespace": "root.environment",
+                "fields": [
+                  {
+                    "type": [
+                      "null",
+                      {
+                        "type": "map",
+                        "values": {
+                          "type": "record",
+                          "name": "value",
+                          "namespace": "root.environment.addons.activeAddons",
+                          "fields": [
+                            {
+                              "type": [
+                                "null",
+                                "boolean"
+                              ],
+                              "name": "appDisabled",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "boolean"
+                              ],
+                              "name": "blocklisted",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "description",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "foreignInstall",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "boolean"
+                              ],
+                              "name": "hasBinaryComponents",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "long"
+                              ],
+                              "name": "installDay",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "boolean"
+                              ],
+                              "name": "isSystem",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "name",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "long"
+                              ],
+                              "name": "scope",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "long"
+                              ],
+                              "name": "signedState",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "type",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "long"
+                              ],
+                              "name": "updateDay",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "userDisabled",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "version",
+                              "default": null
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    "name": "activeAddons",
+                    "default": null
+                  },
+                  {
+                    "type": [
+                      "null",
+                      {
+                        "type": "record",
+                        "name": "activeExperiment",
+                        "namespace": "root.environment.addons",
+                        "fields": [
+                          {
+                            "type": [
+                              "null",
+                              "string"
+                            ],
+                            "name": "branch",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "string"
+                            ],
+                            "name": "id",
+                            "default": null
+                          }
+                        ]
+                      }
+                    ],
+                    "name": "activeExperiment",
+                    "default": null
+                  },
+                  {
+                    "type": [
+                      "null",
+                      {
+                        "type": "map",
+                        "values": {
+                          "type": "record",
+                          "name": "value",
+                          "namespace": "root.environment.addons.activeGMPlugins",
+                          "fields": [
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "applyBackgroundUpdates",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "boolean"
+                              ],
+                              "name": "userDisabled",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "version",
+                              "default": null
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    "name": "activeGMPlugins",
+                    "default": null
+                  },
+                  {
+                    "type": [
+                      "null",
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "record",
+                          "name": "items",
+                          "namespace": "root.environment.addons.activePlugins",
+                          "fields": [
+                            {
+                              "type": [
+                                "null",
+                                "boolean"
+                              ],
+                              "name": "blocklisted",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "boolean"
+                              ],
+                              "name": "clicktoplay",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "description",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "boolean"
+                              ],
+                              "name": "disabled",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                {
+                                  "type": "array",
+                                  "items": "string"
+                                }
+                              ],
+                              "name": "mimeTypes",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "name",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "long"
+                              ],
+                              "name": "updateDay",
+                              "default": null
+                            },
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "version",
+                              "default": null
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    "name": "activePlugins",
+                    "default": null
+                  },
+                  {
+                    "type": [
+                      "null",
+                      "string"
+                    ],
+                    "name": "persona",
+                    "default": null
+                  },
+                  {
+                    "type": [
+                      "null",
+                      {
+                        "type": "record",
+                        "name": "theme",
+                        "namespace": "root.environment.addons",
+                        "fields": [
+                          {
+                            "type": [
+                              "null",
+                              "boolean"
+                            ],
+                            "name": "appDisabled",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "boolean"
+                            ],
+                            "name": "blocklisted",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "string"
+                            ],
+                            "name": "description",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "string"
+                            ],
+                            "name": "foreignInstall",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "boolean"
+                            ],
+                            "name": "hasBinaryComponents",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "string"
+                            ],
+                            "name": "id",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "long"
+                            ],
+                            "name": "installDay",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "string"
+                            ],
+                            "name": "name",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "long"
+                            ],
+                            "name": "scope",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "long"
+                            ],
+                            "name": "updateDay",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "boolean"
+                            ],
+                            "name": "userDisabled",
+                            "default": null
+                          },
+                          {
+                            "type": [
+                              "null",
+                              "string"
+                            ],
+                            "name": "version",
+                            "default": null
+                          }
+                        ]
+                      }
+                    ],
+                    "name": "theme",
+                    "default": null
+                  }
+                ]
+              }
+            ],
+            "name": "addons",
+            "default": null
+          },
+          {
+            "type": {
+              "type": "record",
+              "name": "build",
+              "namespace": "root.environment",
+              "fields": [
+                {
+                  "type": "string",
+                  "name": "applicationId"
+                },
+                {
+                  "type": "string",
+                  "name": "applicationName"
+                },
+                {
+                  "type": "string",
+                  "name": "architecture"
+                },
+                {
+                  "type": [
+                    "null",
+                    "string"
+                  ],
+                  "name": "architecturesInBinary",
+                  "default": null
+                },
+                {
+                  "type": "string",
+                  "name": "buildId"
+                },
+                {
+                  "type": [
+                    "null",
+                    "string"
+                  ],
+                  "name": "displayVersion",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    "string"
+                  ],
+                  "name": "hotfixVersion",
+                  "default": null
+                },
+                {
+                  "type": "string",
+                  "name": "platformVersion"
+                },
+                {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ],
+                  "name": "updaterAvailable",
+                  "default": null
+                },
+                {
+                  "type": "string",
+                  "name": "vendor"
+                },
+                {
+                  "type": "string",
+                  "name": "version"
+                },
+                {
+                  "type": "string",
+                  "name": "xpcomAbi"
+                }
+              ]
+            },
+            "name": "build"
+          },
+          {
+            "type": [
+              "null",
+              {
+                "type": "map",
+                "values": {
+                  "type": "record",
+                  "name": "value",
+                  "namespace": "root.environment.experiments",
+                  "fields": [
+                    {
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "name": "branch",
+                      "default": null
+                    }
+                  ]
+                }
+              }
+            ],
+            "name": "experiments",
+            "default": null
+          },
+          {
+            "type": {
+              "type": "record",
+              "name": "partner",
+              "namespace": "root.environment",
+              "fields": [
+                {
+                  "type": [
+                    "null",
+                    "string"
+                  ],
+                  "name": "distributionId",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    "string"
+                  ],
+                  "name": "distributionVersion",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    "string"
+                  ],
+                  "name": "distributor",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    "string"
+                  ],
+                  "name": "distributorChannel",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    "string"
+                  ],
+                  "name": "partnerId",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    {
+                      "type": "array",
+                      "items": "string"
+                    }
+                  ],
+                  "name": "partnerNames",
+                  "default": null
+                }
+              ]
+            },
+            "name": "partner"
+          },
+          {
+            "type": [
+              "null",
+              {
+                "type": "record",
+                "name": "profile",
+                "namespace": "root.environment",
+                "fields": [
+                  {
+                    "type": [
+                      "null",
+                      "double"
+                    ],
+                    "name": "creationDate",
+                    "default": null
+                  },
+                  {
+                    "type": [
+                      "null",
+                      "double"
+                    ],
+                    "name": "firstUseDate",
+                    "default": null
+                  },
+                  {
+                    "type": [
+                      "null",
+                      "boolean"
+                    ],
+                    "name": "isStubProfile",
+                    "default": null
+                  },
+                  {
+                    "type": [
+                      "null",
+                      "double"
+                    ],
+                    "name": "resetDate",
+                    "default": null
+                  }
+                ]
+              }
+            ],
+            "name": "profile",
+            "default": null
+          },
+          {
+            "type": {
+              "type": "record",
+              "name": "settings",
+              "namespace": "root.environment",
+              "fields": [
+                {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ],
+                  "name": "addonCompatibilityCheckEnabled",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    {
+                      "type": "record",
+                      "name": "attribution",
+                      "namespace": "root.environment.settings",
+                      "fields": [
+                        {
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "name": "campaign",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "name": "content",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "name": "medium",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "name": "source",
+                          "default": null
+                        }
+                      ]
+                    }
+                  ],
+                  "name": "attribution",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ],
+                  "name": "blocklistEnabled",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    "string"
+                  ],
+                  "name": "defaultSearchEngine",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    {
+                      "type": "record",
+                      "name": "defaultSearchEngineData",
+                      "namespace": "root.environment.settings",
+                      "fields": [
+                        {
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "name": "loadPath",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "name": "name",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "name": "origin",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "name": "submissionURL",
+                          "default": null
+                        }
+                      ]
+                    }
+                  ],
+                  "name": "defaultSearchEngineData",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    "string"
+                  ],
+                  "name": "e10sCohort",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ],
+                  "name": "e10sEnabled",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    {
+                      "type": "record",
+                      "name": "intl",
+                      "namespace": "root.environment.settings",
+                      "fields": [
+                        {
+                          "type": [
+                            "null",
+                            {
+                              "type": "array",
+                              "items": "string"
+                            }
+                          ],
+                          "name": "acceptLanguages",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            {
+                              "type": "array",
+                              "items": "string"
+                            }
+                          ],
+                          "name": "appLocales",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            {
+                              "type": "array",
+                              "items": "string"
+                            }
+                          ],
+                          "name": "availableLocales",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            {
+                              "type": "array",
+                              "items": "string"
+                            }
+                          ],
+                          "name": "regionalPrefsLocales",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            {
+                              "type": "array",
+                              "items": "string"
+                            }
+                          ],
+                          "name": "requestedLocales",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            {
+                              "type": "array",
+                              "items": "string"
+                            }
+                          ],
+                          "name": "systemLocales",
+                          "default": null
+                        }
+                      ]
+                    }
+                  ],
+                  "name": "intl",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ],
+                  "name": "isDefaultBrowser",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    "long"
+                  ],
+                  "name": "launcherProcessState",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    "string"
+                  ],
+                  "name": "locale",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    {
+                      "type": "record",
+                      "name": "sandbox",
+                      "namespace": "root.environment.settings",
+                      "fields": [
+                        {
+                          "type": [
+                            "null",
+                            "long"
+                          ],
+                          "name": "effectiveContentProcessLevel",
+                          "default": null
+                        }
+                      ]
+                    }
+                  ],
+                  "name": "sandbox",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    "string"
+                  ],
+                  "name": "searchCohort",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ],
+                  "name": "telemetryEnabled",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    {
+                      "type": "record",
+                      "name": "update",
+                      "namespace": "root.environment.settings",
+                      "fields": [
+                        {
+                          "type": [
+                            "null",
+                            "boolean"
+                          ],
+                          "name": "autoDownload",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "name": "channel",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "boolean"
+                          ],
+                          "name": "enabled",
+                          "default": null
+                        }
+                      ]
+                    }
+                  ],
+                  "name": "update",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    "string"
+                  ],
+                  "name": "userPrefs",
+                  "default": null
+                }
+              ]
+            },
+            "name": "settings"
+          },
+          {
+            "type": {
+              "type": "record",
+              "name": "system",
+              "namespace": "root.environment",
+              "fields": [
+                {
+                  "type": [
+                    "null",
+                    "string"
+                  ],
+                  "name": "appleModelId",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    {
+                      "type": "record",
+                      "name": "cpu",
+                      "namespace": "root.environment.system",
+                      "fields": [
+                        {
+                          "type": [
+                            "null",
+                            "long"
+                          ],
+                          "name": "cores",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "long"
+                          ],
+                          "name": "count",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            {
+                              "type": "array",
+                              "items": "string"
+                            }
+                          ],
+                          "name": "extensions",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "long"
+                          ],
+                          "name": "family",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "double"
+                          ],
+                          "name": "l2cacheKB",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "double"
+                          ],
+                          "name": "l3cacheKB",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "long"
+                          ],
+                          "name": "model",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "double"
+                          ],
+                          "name": "speedMHz",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "long"
+                          ],
+                          "name": "stepping",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "name": "vendor",
+                          "default": null
+                        }
+                      ]
+                    }
+                  ],
+                  "name": "cpu",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    {
+                      "type": "record",
+                      "name": "device",
+                      "namespace": "root.environment.system",
+                      "fields": [
+                        {
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "name": "hardware",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "boolean"
+                          ],
+                          "name": "isTablet",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "name": "manufacturer",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "name": "model",
+                          "default": null
+                        }
+                      ]
+                    }
+                  ],
+                  "name": "device",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    {
+                      "type": "record",
+                      "name": "gfx",
+                      "namespace": "root.environment.system",
+                      "fields": [
+                        {
+                          "type": [
+                            "null",
+                            "boolean"
+                          ],
+                          "name": "D2DEnabled",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "boolean"
+                          ],
+                          "name": "DWriteEnabled",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "boolean"
+                          ],
+                          "name": "LowEndMachine",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            {
+                              "type": "array",
+                              "items": {
+                                "type": "record",
+                                "name": "items",
+                                "namespace": "root.environment.system.gfx.adapters",
+                                "fields": [
+                                  {
+                                    "type": [
+                                      "null",
+                                      "boolean"
+                                    ],
+                                    "name": "GPUActive",
+                                    "default": null
+                                  },
+                                  {
+                                    "type": [
+                                      "null",
+                                      "long"
+                                    ],
+                                    "name": "RAM",
+                                    "default": null
+                                  },
+                                  {
+                                    "type": [
+                                      "null",
+                                      "string"
+                                    ],
+                                    "name": "description",
+                                    "default": null
+                                  },
+                                  {
+                                    "type": [
+                                      "null",
+                                      "string"
+                                    ],
+                                    "name": "deviceID",
+                                    "default": null
+                                  },
+                                  {
+                                    "type": [
+                                      "null",
+                                      "string"
+                                    ],
+                                    "name": "driver",
+                                    "default": null
+                                  },
+                                  {
+                                    "type": [
+                                      "null",
+                                      "string"
+                                    ],
+                                    "name": "driverDate",
+                                    "default": null
+                                  },
+                                  {
+                                    "type": [
+                                      "null",
+                                      "string"
+                                    ],
+                                    "name": "driverVersion",
+                                    "default": null
+                                  },
+                                  {
+                                    "type": [
+                                      "null",
+                                      "string"
+                                    ],
+                                    "name": "subsysID",
+                                    "default": null
+                                  },
+                                  {
+                                    "type": [
+                                      "null",
+                                      "string"
+                                    ],
+                                    "name": "vendorID",
+                                    "default": null
+                                  }
+                                ]
+                              }
+                            }
+                          ],
+                          "name": "adapters",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            {
+                              "type": "record",
+                              "name": "features",
+                              "namespace": "root.environment.system.gfx",
+                              "fields": [
+                                {
+                                  "type": [
+                                    "null",
+                                    {
+                                      "type": "record",
+                                      "name": "advancedLayers",
+                                      "namespace": "root.environment.system.gfx.features",
+                                      "fields": [
+                                        {
+                                          "type": [
+                                            "null",
+                                            "string"
+                                          ],
+                                          "name": "status",
+                                          "default": null
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "name": "advancedLayers",
+                                  "default": null
+                                },
+                                {
+                                  "type": [
+                                    "null",
+                                    "string"
+                                  ],
+                                  "name": "compositor",
+                                  "default": null
+                                },
+                                {
+                                  "type": [
+                                    "null",
+                                    {
+                                      "type": "record",
+                                      "name": "d2d",
+                                      "namespace": "root.environment.system.gfx.features",
+                                      "fields": [
+                                        {
+                                          "type": [
+                                            "null",
+                                            "string"
+                                          ],
+                                          "name": "status",
+                                          "default": null
+                                        },
+                                        {
+                                          "type": [
+                                            "null",
+                                            "string"
+                                          ],
+                                          "name": "version",
+                                          "default": null
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "name": "d2d",
+                                  "default": null
+                                },
+                                {
+                                  "type": [
+                                    "null",
+                                    {
+                                      "type": "record",
+                                      "name": "d3d11",
+                                      "namespace": "root.environment.system.gfx.features",
+                                      "fields": [
+                                        {
+                                          "type": [
+                                            "null",
+                                            "boolean"
+                                          ],
+                                          "name": "blacklisted",
+                                          "default": null
+                                        },
+                                        {
+                                          "type": [
+                                            "null",
+                                            "string"
+                                          ],
+                                          "name": "status",
+                                          "default": null
+                                        },
+                                        {
+                                          "type": [
+                                            "null",
+                                            "boolean"
+                                          ],
+                                          "name": "textureSharing",
+                                          "default": null
+                                        },
+                                        {
+                                          "type": [
+                                            "null",
+                                            "double"
+                                          ],
+                                          "name": "version",
+                                          "default": null
+                                        },
+                                        {
+                                          "type": [
+                                            "null",
+                                            "boolean"
+                                          ],
+                                          "name": "warp",
+                                          "default": null
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "name": "d3d11",
+                                  "default": null
+                                },
+                                {
+                                  "type": [
+                                    "null",
+                                    {
+                                      "type": "record",
+                                      "name": "gpuProcess",
+                                      "namespace": "root.environment.system.gfx.features",
+                                      "fields": [
+                                        {
+                                          "type": [
+                                            "null",
+                                            "string"
+                                          ],
+                                          "name": "status",
+                                          "default": null
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "name": "gpuProcess",
+                                  "default": null
+                                }
+                              ]
+                            }
+                          ],
+                          "name": "features",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            {
+                              "type": "array",
+                              "items": {
+                                "type": "record",
+                                "name": "items",
+                                "namespace": "root.environment.system.gfx.monitors",
+                                "fields": [
+                                  {
+                                    "type": [
+                                      "null",
+                                      "boolean"
+                                    ],
+                                    "name": "pseudoDisplay",
+                                    "default": null
+                                  },
+                                  {
+                                    "type": [
+                                      "null",
+                                      "double"
+                                    ],
+                                    "name": "refreshRate",
+                                    "default": null
+                                  },
+                                  {
+                                    "type": [
+                                      "null",
+                                      "double"
+                                    ],
+                                    "name": "scale",
+                                    "default": null
+                                  },
+                                  {
+                                    "type": [
+                                      "null",
+                                      "long"
+                                    ],
+                                    "name": "screenHeight",
+                                    "default": null
+                                  },
+                                  {
+                                    "type": [
+                                      "null",
+                                      "long"
+                                    ],
+                                    "name": "screenWidth",
+                                    "default": null
+                                  }
+                                ]
+                              }
+                            }
+                          ],
+                          "name": "monitors",
+                          "default": null
+                        }
+                      ]
+                    }
+                  ],
+                  "name": "gfx",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    {
+                      "type": "record",
+                      "name": "hdd",
+                      "namespace": "root.environment.system",
+                      "fields": [
+                        {
+                          "type": [
+                            "null",
+                            {
+                              "type": "record",
+                              "name": "binary",
+                              "namespace": "root.environment.system.hdd",
+                              "fields": [
+                                {
+                                  "type": [
+                                    "null",
+                                    "string"
+                                  ],
+                                  "name": "model",
+                                  "default": null
+                                },
+                                {
+                                  "type": [
+                                    "null",
+                                    "string"
+                                  ],
+                                  "name": "revision",
+                                  "default": null
+                                }
+                              ]
+                            }
+                          ],
+                          "name": "binary",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            {
+                              "type": "record",
+                              "name": "profile",
+                              "namespace": "root.environment.system.hdd",
+                              "fields": [
+                                {
+                                  "type": [
+                                    "null",
+                                    "string"
+                                  ],
+                                  "name": "model",
+                                  "default": null
+                                },
+                                {
+                                  "type": [
+                                    "null",
+                                    "string"
+                                  ],
+                                  "name": "revision",
+                                  "default": null
+                                }
+                              ]
+                            }
+                          ],
+                          "name": "profile",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            {
+                              "type": "record",
+                              "name": "system",
+                              "namespace": "root.environment.system.hdd",
+                              "fields": [
+                                {
+                                  "type": [
+                                    "null",
+                                    "string"
+                                  ],
+                                  "name": "model",
+                                  "default": null
+                                },
+                                {
+                                  "type": [
+                                    "null",
+                                    "string"
+                                  ],
+                                  "name": "revision",
+                                  "default": null
+                                }
+                              ]
+                            }
+                          ],
+                          "name": "system",
+                          "default": null
+                        }
+                      ]
+                    }
+                  ],
+                  "name": "hdd",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ],
+                  "name": "isWow64",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    "double"
+                  ],
+                  "name": "memoryMB",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    {
+                      "type": "record",
+                      "name": "os",
+                      "namespace": "root.environment.system",
+                      "fields": [
+                        {
+                          "type": [
+                            "null",
+                            "double"
+                          ],
+                          "name": "installYear",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "name": "kernelVersion",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "name": "locale",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "name": "name",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "double"
+                          ],
+                          "name": "servicePackMajor",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "double"
+                          ],
+                          "name": "servicePackMinor",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "name": "version",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "double"
+                          ],
+                          "name": "windowsBuildNumber",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "double"
+                          ],
+                          "name": "windowsUBR",
+                          "default": null
+                        }
+                      ]
+                    }
+                  ],
+                  "name": "os",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    {
+                      "type": "record",
+                      "name": "sec",
+                      "namespace": "root.environment.system",
+                      "fields": [
+                        {
+                          "type": [
+                            "null",
+                            {
+                              "type": "array",
+                              "items": "string"
+                            }
+                          ],
+                          "name": "antispyware",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            {
+                              "type": "array",
+                              "items": "string"
+                            }
+                          ],
+                          "name": "antivirus",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            {
+                              "type": "array",
+                              "items": "string"
+                            }
+                          ],
+                          "name": "firewall",
+                          "default": null
+                        }
+                      ]
+                    }
+                  ],
+                  "name": "sec",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    "double"
+                  ],
+                  "name": "virtualMaxMB",
+                  "default": null
+                }
+              ]
+            },
+            "name": "system"
+          }
+        ]
+      },
+      "name": "environment"
+    },
+    {
+      "type": "string",
+      "name": "id"
+    },
+    {
+      "type": {
+        "type": "record",
+        "name": "payload",
+        "namespace": "root",
+        "fields": [
+          {
+            "type": "string",
+            "name": "reason"
+          }
+        ]
+      },
+      "name": "payload"
+    },
+    {
+      "type": "string",
+      "name": "type"
+    },
+    {
+      "type": "double",
+      "name": "version"
+    }
+  ]
+}

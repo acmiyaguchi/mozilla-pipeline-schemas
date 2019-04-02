@@ -1,0 +1,175 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "name": "accessibilityServices",
+      "default": null
+    },
+    {
+      "type": "string",
+      "name": "arch"
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "bug_1501329_affected",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "campaign",
+      "default": null
+    },
+    {
+      "type": "string",
+      "name": "clientId"
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "created",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "defaultBrowser",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "defaultSearch",
+      "default": null
+    },
+    {
+      "type": "string",
+      "name": "device"
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "displayVersion",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "distributionId",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "durations",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "name": "experiments",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "flashUsage",
+      "default": null
+    },
+    {
+      "type": "string",
+      "name": "locale"
+    },
+    {
+      "type": "string",
+      "name": "os"
+    },
+    {
+      "type": "string",
+      "name": "osversion"
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "profileDate",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "map",
+          "values": "long"
+        }
+      ],
+      "name": "searches",
+      "default": null
+    },
+    {
+      "type": "long",
+      "name": "seq"
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "sessions",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "showTrackerStatsShare",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "tz",
+      "default": null
+    },
+    {
+      "type": "long",
+      "name": "v"
+    }
+  ]
+}

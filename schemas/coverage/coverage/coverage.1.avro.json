@@ -1,0 +1,26 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": "string",
+      "name": "appUpdateChannel"
+    },
+    {
+      "type": "string",
+      "name": "appVersion"
+    },
+    {
+      "type": "string",
+      "name": "osName"
+    },
+    {
+      "type": "string",
+      "name": "osVersion"
+    },
+    {
+      "type": "long",
+      "name": "telemetryEnabled"
+    }
+  ]
+}

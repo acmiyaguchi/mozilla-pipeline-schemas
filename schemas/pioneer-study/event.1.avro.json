@@ -1,0 +1,10 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": "string",
+      "name": "eventId"
+    }
+  ]
+}

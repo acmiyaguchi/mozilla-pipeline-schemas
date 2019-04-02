@@ -1,0 +1,52 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": "string",
+      "name": "addon_version"
+    },
+    {
+      "type": "string",
+      "name": "branch"
+    },
+    {
+      "type": {
+        "type": "record",
+        "name": "data",
+        "namespace": "root",
+        "fields": [
+          {
+            "type": "string",
+            "name": "attributes"
+          }
+        ]
+      },
+      "name": "data"
+    },
+    {
+      "type": "string",
+      "name": "shield_version"
+    },
+    {
+      "type": "string",
+      "name": "study_name"
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "testing",
+      "default": null
+    },
+    {
+      "type": "string",
+      "name": "type"
+    },
+    {
+      "type": "long",
+      "name": "version"
+    }
+  ]
+}

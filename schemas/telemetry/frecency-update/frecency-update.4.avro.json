@@ -1,0 +1,106 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": "string",
+      "name": "clientId"
+    },
+    {
+      "type": {
+        "type": "record",
+        "name": "payload",
+        "namespace": "root",
+        "fields": [
+          {
+            "type": "double",
+            "name": "bookmark_and_history_num_suggestions_displayed"
+          },
+          {
+            "type": "double",
+            "name": "bookmark_and_history_rank_selected"
+          },
+          {
+            "type": "double",
+            "name": "enter_was_pressed"
+          },
+          {
+            "type": {
+              "type": "array",
+              "items": "double"
+            },
+            "name": "frecency_scores"
+          },
+          {
+            "type": "double",
+            "name": "loss"
+          },
+          {
+            "type": "double",
+            "name": "model_version"
+          },
+          {
+            "type": "double",
+            "name": "num_key_down_events"
+          },
+          {
+            "type": "double",
+            "name": "num_key_down_events_at_selecteds_first_entry"
+          },
+          {
+            "type": "double",
+            "name": "num_suggestions_displayed"
+          },
+          {
+            "type": "double",
+            "name": "rank_selected"
+          },
+          {
+            "type": "double",
+            "name": "search_string_length"
+          },
+          {
+            "type": "string",
+            "name": "selected_style"
+          },
+          {
+            "type": "double",
+            "name": "selected_url_was_same_as_search_string"
+          },
+          {
+            "type": "string",
+            "name": "study_addon_version"
+          },
+          {
+            "type": "string",
+            "name": "study_variation"
+          },
+          {
+            "type": "double",
+            "name": "time_at_selecteds_first_entry"
+          },
+          {
+            "type": "double",
+            "name": "time_end_interaction"
+          },
+          {
+            "type": "double",
+            "name": "time_start_interaction"
+          },
+          {
+            "type": {
+              "type": "array",
+              "items": "double"
+            },
+            "name": "update"
+          }
+        ]
+      },
+      "name": "payload"
+    },
+    {
+      "type": "string",
+      "name": "type"
+    }
+  ]
+}

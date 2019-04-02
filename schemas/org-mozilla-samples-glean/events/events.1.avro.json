@@ -1,0 +1,724 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": {
+        "type": "record",
+        "name": "client_info",
+        "namespace": "root",
+        "fields": [
+          {
+            "type": [
+              "null",
+              "string"
+            ],
+            "name": "android_sdk_version",
+            "default": null
+          },
+          {
+            "type": "string",
+            "name": "app_build"
+          },
+          {
+            "type": [
+              "null",
+              "string"
+            ],
+            "name": "app_channel",
+            "default": null
+          },
+          {
+            "type": "string",
+            "name": "app_display_version"
+          },
+          {
+            "type": "string",
+            "name": "architecture"
+          },
+          {
+            "type": "string",
+            "name": "client_id"
+          },
+          {
+            "type": "string",
+            "name": "device_manufacturer"
+          },
+          {
+            "type": "string",
+            "name": "device_model"
+          },
+          {
+            "type": "string",
+            "name": "first_run_date"
+          },
+          {
+            "type": "string",
+            "name": "os"
+          },
+          {
+            "type": "string",
+            "name": "os_version"
+          },
+          {
+            "type": "string",
+            "name": "telemetry_sdk_build"
+          }
+        ]
+      },
+      "name": "client_info"
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "type": "record",
+            "name": "items",
+            "namespace": "root.events",
+            "fields": [
+              {
+                "type": "string",
+                "name": "category"
+              },
+              {
+                "type": [
+                  "null",
+                  {
+                    "type": "map",
+                    "values": "string"
+                  }
+                ],
+                "name": "extra",
+                "default": null
+              },
+              {
+                "type": "string",
+                "name": "name"
+              },
+              {
+                "type": "long",
+                "name": "timestamp"
+              }
+            ]
+          }
+        }
+      ],
+      "name": "events",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "metrics",
+          "namespace": "root",
+          "fields": [
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": "boolean"
+                }
+              ],
+              "name": "boolean",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": "long"
+                }
+              ],
+              "name": "counter",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": "string"
+                }
+              ],
+              "name": "datetime",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": "string"
+                }
+              ],
+              "name": "enumeration",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": {
+                    "type": "map",
+                    "values": "boolean"
+                  }
+                }
+              ],
+              "name": "labeled_boolean",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": {
+                    "type": "map",
+                    "values": "long"
+                  }
+                }
+              ],
+              "name": "labeled_counter",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": {
+                    "type": "map",
+                    "values": "string"
+                  }
+                }
+              ],
+              "name": "labeled_datetime",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": {
+                    "type": "map",
+                    "values": "string"
+                  }
+                }
+              ],
+              "name": "labeled_enumeration",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": {
+                    "type": "map",
+                    "values": "double"
+                  }
+                }
+              ],
+              "name": "labeled_number",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": {
+                    "type": "map",
+                    "values": "long"
+                  }
+                }
+              ],
+              "name": "labeled_rate",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": {
+                    "type": "map",
+                    "values": "string"
+                  }
+                }
+              ],
+              "name": "labeled_string",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": {
+                    "type": "map",
+                    "values": {
+                      "type": "array",
+                      "items": "string"
+                    }
+                  }
+                }
+              ],
+              "name": "labeled_string_list",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": {
+                    "type": "map",
+                    "values": {
+                      "type": "record",
+                      "name": "value",
+                      "namespace": "root.metrics.labeled_timespan.value",
+                      "fields": [
+                        {
+                          "type": "string",
+                          "name": "time_unit"
+                        },
+                        {
+                          "type": "long",
+                          "name": "value"
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "name": "labeled_timespan",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": {
+                    "type": "map",
+                    "values": {
+                      "type": "record",
+                      "name": "value",
+                      "namespace": "root.metrics.labeled_timing_distribution.value",
+                      "fields": [
+                        {
+                          "type": "long",
+                          "name": "bucket_count"
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "name": "histogram_type",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "long"
+                          ],
+                          "name": "overflow",
+                          "default": null
+                        },
+                        {
+                          "type": {
+                            "type": "array",
+                            "items": "double"
+                          },
+                          "name": "range"
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "long"
+                          ],
+                          "name": "sum",
+                          "default": null
+                        },
+                        {
+                          "type": "string",
+                          "name": "time_unit"
+                        },
+                        {
+                          "type": [
+                            "null",
+                            "long"
+                          ],
+                          "name": "underflow",
+                          "default": null
+                        },
+                        {
+                          "type": {
+                            "type": "map",
+                            "values": "long"
+                          },
+                          "name": "values"
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "name": "labeled_timing_distribution",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": {
+                    "type": "map",
+                    "values": "boolean"
+                  }
+                }
+              ],
+              "name": "labeled_usage",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": {
+                    "type": "map",
+                    "values": {
+                      "type": "record",
+                      "name": "value",
+                      "namespace": "root.metrics.labeled_use_counter.value",
+                      "fields": [
+                        {
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "name": "denominator",
+                          "default": null
+                        },
+                        {
+                          "type": [
+                            "null",
+                            {
+                              "type": "map",
+                              "values": "long"
+                            }
+                          ],
+                          "name": "values",
+                          "default": null
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "name": "labeled_use_counter",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": {
+                    "type": "map",
+                    "values": "string"
+                  }
+                }
+              ],
+              "name": "labeled_uuid",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": "double"
+                }
+              ],
+              "name": "number",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": "long"
+                }
+              ],
+              "name": "rate",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": "string"
+                }
+              ],
+              "name": "string",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": {
+                    "type": "array",
+                    "items": "string"
+                  }
+                }
+              ],
+              "name": "string_list",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": {
+                    "type": "record",
+                    "name": "value",
+                    "namespace": "root.metrics.timespan",
+                    "fields": [
+                      {
+                        "type": "string",
+                        "name": "time_unit"
+                      },
+                      {
+                        "type": "long",
+                        "name": "value"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "name": "timespan",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": {
+                    "type": "record",
+                    "name": "value",
+                    "namespace": "root.metrics.timing_distribution",
+                    "fields": [
+                      {
+                        "type": "long",
+                        "name": "bucket_count"
+                      },
+                      {
+                        "type": [
+                          "null",
+                          "string"
+                        ],
+                        "name": "histogram_type",
+                        "default": null
+                      },
+                      {
+                        "type": [
+                          "null",
+                          "long"
+                        ],
+                        "name": "overflow",
+                        "default": null
+                      },
+                      {
+                        "type": {
+                          "type": "array",
+                          "items": "double"
+                        },
+                        "name": "range"
+                      },
+                      {
+                        "type": [
+                          "null",
+                          "long"
+                        ],
+                        "name": "sum",
+                        "default": null
+                      },
+                      {
+                        "type": "string",
+                        "name": "time_unit"
+                      },
+                      {
+                        "type": [
+                          "null",
+                          "long"
+                        ],
+                        "name": "underflow",
+                        "default": null
+                      },
+                      {
+                        "type": {
+                          "type": "map",
+                          "values": "long"
+                        },
+                        "name": "values"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "name": "timing_distribution",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": "boolean"
+                }
+              ],
+              "name": "usage",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": {
+                    "type": "record",
+                    "name": "value",
+                    "namespace": "root.metrics.use_counter",
+                    "fields": [
+                      {
+                        "type": [
+                          "null",
+                          "string"
+                        ],
+                        "name": "denominator",
+                        "default": null
+                      },
+                      {
+                        "type": [
+                          "null",
+                          {
+                            "type": "map",
+                            "values": "long"
+                          }
+                        ],
+                        "name": "values",
+                        "default": null
+                      }
+                    ]
+                  }
+                }
+              ],
+              "name": "use_counter",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "map",
+                  "values": "string"
+                }
+              ],
+              "name": "uuid",
+              "default": null
+            }
+          ]
+        }
+      ],
+      "name": "metrics",
+      "default": null
+    },
+    {
+      "type": {
+        "type": "record",
+        "name": "ping_info",
+        "namespace": "root",
+        "fields": [
+          {
+            "type": "string",
+            "name": "end_time"
+          },
+          {
+            "type": [
+              "null",
+              {
+                "type": "map",
+                "values": {
+                  "type": "record",
+                  "name": "value",
+                  "namespace": "root.ping_info.experiments",
+                  "fields": [
+                    {
+                      "type": "string",
+                      "name": "branch"
+                    },
+                    {
+                      "type": [
+                        "null",
+                        {
+                          "type": "record",
+                          "name": "extra",
+                          "namespace": "root.ping_info.experiments.value",
+                          "fields": [
+                            {
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "name": "type",
+                              "default": null
+                            }
+                          ]
+                        }
+                      ],
+                      "name": "extra",
+                      "default": null
+                    }
+                  ]
+                }
+              }
+            ],
+            "name": "experiments",
+            "default": null
+          },
+          {
+            "type": "string",
+            "name": "ping_type"
+          },
+          {
+            "type": "long",
+            "name": "seq"
+          },
+          {
+            "type": "string",
+            "name": "start_time"
+          }
+        ]
+      },
+      "name": "ping_info"
+    }
+  ]
+}

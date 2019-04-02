@@ -1,0 +1,31 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "record",
+          "name": "items",
+          "namespace": "root.entries",
+          "fields": [
+            {
+              "type": "string",
+              "name": "details"
+            },
+            {
+              "type": "long",
+              "name": "timestamp"
+            },
+            {
+              "type": "string",
+              "name": "url"
+            }
+          ]
+        }
+      },
+      "name": "entries"
+    }
+  ]
+}

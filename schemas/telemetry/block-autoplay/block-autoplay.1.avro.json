@@ -1,0 +1,156 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": {
+        "type": "record",
+        "name": "application",
+        "namespace": "root",
+        "fields": [
+          {
+            "type": "string",
+            "name": "architecture"
+          },
+          {
+            "type": "string",
+            "name": "buildId"
+          },
+          {
+            "type": "string",
+            "name": "channel"
+          },
+          {
+            "type": [
+              "null",
+              "string"
+            ],
+            "name": "displayVersion",
+            "default": null
+          },
+          {
+            "type": "string",
+            "name": "name"
+          },
+          {
+            "type": "string",
+            "name": "platformVersion"
+          },
+          {
+            "type": "string",
+            "name": "vendor"
+          },
+          {
+            "type": "string",
+            "name": "version"
+          },
+          {
+            "type": "string",
+            "name": "xpcomAbi"
+          }
+        ]
+      },
+      "name": "application"
+    },
+    {
+      "type": "string",
+      "name": "clientId"
+    },
+    {
+      "type": "string",
+      "name": "creationDate"
+    },
+    {
+      "type": "string",
+      "name": "id"
+    },
+    {
+      "type": {
+        "type": "record",
+        "name": "payload",
+        "namespace": "root",
+        "fields": [
+          {
+            "type": "string",
+            "name": "branch"
+          },
+          {
+            "type": "long",
+            "name": "id"
+          },
+          {
+            "type": {
+              "type": "record",
+              "name": "payload",
+              "namespace": "root.payload",
+              "fields": [
+                {
+                  "type": [
+                    "null",
+                    {
+                      "type": "record",
+                      "name": "counters",
+                      "namespace": "root.payload.payload",
+                      "fields": [
+                        {
+                          "type": "long",
+                          "name": "totalBlockedAudibleMedia"
+                        },
+                        {
+                          "type": "long",
+                          "name": "totalPages"
+                        },
+                        {
+                          "type": "long",
+                          "name": "totalPagesAM"
+                        }
+                      ]
+                    }
+                  ],
+                  "name": "counters",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    {
+                      "type": "array",
+                      "items": "string"
+                    }
+                  ],
+                  "name": "promptResponse",
+                  "default": null
+                },
+                {
+                  "type": [
+                    "null",
+                    {
+                      "type": "array",
+                      "items": "string"
+                    }
+                  ],
+                  "name": "settingsChanged",
+                  "default": null
+                },
+                {
+                  "type": "string",
+                  "name": "type"
+                }
+              ]
+            },
+            "name": "payload"
+          }
+        ]
+      },
+      "name": "payload"
+    },
+    {
+      "type": "string",
+      "name": "type"
+    },
+    {
+      "type": "double",
+      "name": "version"
+    }
+  ]
+}

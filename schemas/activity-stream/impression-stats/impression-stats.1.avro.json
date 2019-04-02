@@ -1,0 +1,127 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": "string",
+      "name": "addon_version"
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "block",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "click",
+      "default": null
+    },
+    {
+      "type": "string",
+      "name": "impression_id"
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "loaded",
+      "default": null
+    },
+    {
+      "type": "string",
+      "name": "locale"
+    },
+    {
+      "type": "string",
+      "name": "page"
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "pocket",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "profile_creation_date",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "region",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "release_channel",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "shield_id",
+      "default": null
+    },
+    {
+      "type": "string",
+      "name": "source"
+    },
+    {
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "record",
+          "name": "items",
+          "namespace": "root.tiles",
+          "fields": [
+            {
+              "type": "long",
+              "name": "id"
+            },
+            {
+              "type": [
+                "null",
+                "long"
+              ],
+              "name": "pos",
+              "default": null
+            }
+          ]
+        }
+      },
+      "name": "tiles"
+    },
+    {
+      "type": "long",
+      "name": "user_prefs"
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "version",
+      "default": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "record",
+  "name": "root",
+  "fields": [
+    {
+      "type": "string",
+      "name": "context"
+    },
+    {
+      "type": "string",
+      "name": "eventId"
+    },
+    {
+      "type": "long",
+      "name": "timestamp"
+    }
+  ]
+}
