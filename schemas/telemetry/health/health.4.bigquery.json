@@ -1,0 +1,136 @@
+{
+  "fields": [
+    {
+      "fields": [
+        {
+          "mode": "REQUIRED",
+          "name": "architecture",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "buildId",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "channel",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "displayVersion",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "name",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "platformVersion",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "vendor",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "version",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "xpcomAbi",
+          "type": "STRING"
+        }
+      ],
+      "mode": "REQUIRED",
+      "name": "application",
+      "type": "RECORD"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "clientId",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "creationDate",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "id",
+      "type": "STRING"
+    },
+    {
+      "fields": [
+        {
+          "fields": [
+            {
+              "mode": "NULLABLE",
+              "name": "name",
+              "type": "STRING"
+            },
+            {
+              "mode": "NULLABLE",
+              "name": "version",
+              "type": "STRING"
+            }
+          ],
+          "mode": "REQUIRED",
+          "name": "os",
+          "type": "RECORD"
+        },
+        {
+          "fields": [
+            {
+              "mode": "NULLABLE",
+              "name": "additionalProperties",
+              "type": "FLOAT64"
+            }
+          ],
+          "mode": "NULLABLE",
+          "name": "pingDiscardedForSize",
+          "type": "RECORD"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "reason",
+          "type": "STRING"
+        },
+        {
+          "fields": [
+            {
+              "mode": "NULLABLE",
+              "name": "additionalProperties",
+              "type": "FLOAT64"
+            }
+          ],
+          "mode": "NULLABLE",
+          "name": "sendFailure",
+          "type": "RECORD"
+        }
+      ],
+      "mode": "REQUIRED",
+      "name": "payload",
+      "type": "RECORD"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "type",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "version",
+      "type": "FLOAT64"
+    }
+  ],
+  "mode": "REQUIRED",
+  "type": "RECORD"
+}

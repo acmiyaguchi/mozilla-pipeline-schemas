@@ -1,0 +1,115 @@
+{
+  "fields": [
+    {
+      "fields": [
+        {
+          "mode": "REQUIRED",
+          "name": "architecture",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "buildId",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "channel",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "displayVersion",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "name",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "platformVersion",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "vendor",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "version",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "xpcomAbi",
+          "type": "STRING"
+        }
+      ],
+      "mode": "REQUIRED",
+      "name": "application",
+      "type": "RECORD"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "creationDate",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "id",
+      "type": "STRING"
+    },
+    {
+      "fields": [
+        {
+          "mode": "REQUIRED",
+          "name": "encryptedData",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "encryptionKeyId",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "pioneerId",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "schemaName",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "schemaVersion",
+          "type": "INT64"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "studyName",
+          "type": "STRING"
+        }
+      ],
+      "mode": "REQUIRED",
+      "name": "payload",
+      "type": "RECORD"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "type",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "version",
+      "type": "INT64"
+    }
+  ],
+  "mode": "REQUIRED",
+  "type": "RECORD"
+}

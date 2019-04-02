@@ -1,0 +1,160 @@
+{
+  "fields": [
+    {
+      "fields": [
+        {
+          "mode": "REQUIRED",
+          "name": "architecture",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "buildId",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "channel",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "displayVersion",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "name",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "platformVersion",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "vendor",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "version",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "xpcomAbi",
+          "type": "STRING"
+        }
+      ],
+      "mode": "REQUIRED",
+      "name": "application",
+      "type": "RECORD"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "clientId",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "creationDate",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "engagementType",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "id",
+      "type": "STRING"
+    },
+    {
+      "fields": [
+        {
+          "mode": "NULLABLE",
+          "name": "closedTS",
+          "type": "INT64"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "engagedTS",
+          "type": "INT64"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "expiredTS",
+          "type": "INT64"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "flowId",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "learnMoreTS",
+          "type": "INT64"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "offeredTS",
+          "type": "INT64"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "score",
+          "type": "INT64"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "surveyId",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "surveyVersion",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "testing",
+          "type": "BOOL"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "version",
+          "type": "FLOAT64"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "votedTS",
+          "type": "INT64"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "windowClosedTS",
+          "type": "INT64"
+        }
+      ],
+      "mode": "REQUIRED",
+      "name": "payload",
+      "type": "RECORD"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "type",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "version",
+      "type": "FLOAT64"
+    }
+  ],
+  "mode": "REQUIRED",
+  "type": "RECORD"
+}

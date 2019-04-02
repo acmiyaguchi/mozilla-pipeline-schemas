@@ -1,0 +1,312 @@
+{
+  "fields": [
+    {
+      "mode": "NULLABLE",
+      "name": "arch",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "clientId",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "createdDate",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "createdTimestamp",
+      "type": "INT64"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "device",
+      "type": "STRING"
+    },
+    {
+      "fields": [
+        {
+          "mode": "REQUIRED",
+          "name": "key",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "value",
+          "type": "STRING"
+        }
+      ],
+      "mode": "REPEATED",
+      "name": "experiments",
+      "type": "RECORD"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "locale",
+      "type": "STRING"
+    },
+    {
+      "fields": [
+        {
+          "mode": "REQUIRED",
+          "name": "key",
+          "type": "STRING"
+        },
+        {
+          "fields": [
+            {
+              "fields": [
+                {
+                  "mode": "REQUIRED",
+                  "name": "key",
+                  "type": "STRING"
+                },
+                {
+                  "fields": [
+                    {
+                      "mode": "NULLABLE",
+                      "name": "bucket_count",
+                      "type": "INT64"
+                    },
+                    {
+                      "mode": "NULLABLE",
+                      "name": "histogram_type",
+                      "type": "INT64"
+                    },
+                    {
+                      "mode": "NULLABLE",
+                      "name": "log_sum",
+                      "type": "FLOAT64"
+                    },
+                    {
+                      "mode": "NULLABLE",
+                      "name": "log_sum_squares",
+                      "type": "FLOAT64"
+                    },
+                    {
+                      "mode": "REPEATED",
+                      "name": "range",
+                      "type": "INT64"
+                    },
+                    {
+                      "mode": "NULLABLE",
+                      "name": "sum",
+                      "type": "INT64"
+                    },
+                    {
+                      "mode": "NULLABLE",
+                      "name": "sum_squares_hi",
+                      "type": "INT64"
+                    },
+                    {
+                      "mode": "NULLABLE",
+                      "name": "sum_squares_lo",
+                      "type": "INT64"
+                    },
+                    {
+                      "fields": [
+                        {
+                          "mode": "REQUIRED",
+                          "name": "key",
+                          "type": "STRING"
+                        },
+                        {
+                          "mode": "REQUIRED",
+                          "name": "value",
+                          "type": "INT64"
+                        }
+                      ],
+                      "mode": "REPEATED",
+                      "name": "values",
+                      "type": "RECORD"
+                    }
+                  ],
+                  "mode": "REQUIRED",
+                  "name": "value",
+                  "type": "RECORD"
+                }
+              ],
+              "mode": "REPEATED",
+              "name": "histograms",
+              "type": "RECORD"
+            },
+            {
+              "fields": [
+                {
+                  "mode": "REQUIRED",
+                  "name": "key",
+                  "type": "STRING"
+                },
+                {
+                  "fields": [
+                    {
+                      "mode": "REQUIRED",
+                      "name": "key",
+                      "type": "STRING"
+                    },
+                    {
+                      "fields": [
+                        {
+                          "mode": "NULLABLE",
+                          "name": "bucket_count",
+                          "type": "INT64"
+                        },
+                        {
+                          "mode": "NULLABLE",
+                          "name": "histogram_type",
+                          "type": "INT64"
+                        },
+                        {
+                          "mode": "NULLABLE",
+                          "name": "log_sum",
+                          "type": "FLOAT64"
+                        },
+                        {
+                          "mode": "NULLABLE",
+                          "name": "log_sum_squares",
+                          "type": "FLOAT64"
+                        },
+                        {
+                          "mode": "REPEATED",
+                          "name": "range",
+                          "type": "INT64"
+                        },
+                        {
+                          "mode": "NULLABLE",
+                          "name": "sum",
+                          "type": "INT64"
+                        },
+                        {
+                          "mode": "NULLABLE",
+                          "name": "sum_squares_hi",
+                          "type": "INT64"
+                        },
+                        {
+                          "mode": "NULLABLE",
+                          "name": "sum_squares_lo",
+                          "type": "INT64"
+                        },
+                        {
+                          "fields": [
+                            {
+                              "mode": "REQUIRED",
+                              "name": "key",
+                              "type": "STRING"
+                            },
+                            {
+                              "mode": "REQUIRED",
+                              "name": "value",
+                              "type": "INT64"
+                            }
+                          ],
+                          "mode": "REPEATED",
+                          "name": "values",
+                          "type": "RECORD"
+                        }
+                      ],
+                      "mode": "REQUIRED",
+                      "name": "value",
+                      "type": "RECORD"
+                    }
+                  ],
+                  "mode": "REPEATED",
+                  "name": "value",
+                  "type": "RECORD"
+                }
+              ],
+              "mode": "REPEATED",
+              "name": "keyedHistograms",
+              "type": "RECORD"
+            },
+            {
+              "fields": [
+                {
+                  "mode": "REQUIRED",
+                  "name": "key",
+                  "type": "STRING"
+                },
+                {
+                  "fields": [
+                    {
+                      "mode": "REQUIRED",
+                      "name": "key",
+                      "type": "STRING"
+                    },
+                    {
+                      "mode": "REQUIRED",
+                      "name": "value",
+                      "type": "STRING"
+                    }
+                  ],
+                  "mode": "REPEATED",
+                  "name": "value",
+                  "type": "RECORD"
+                }
+              ],
+              "mode": "REPEATED",
+              "name": "keyedScalars",
+              "type": "RECORD"
+            },
+            {
+              "fields": [
+                {
+                  "mode": "REQUIRED",
+                  "name": "key",
+                  "type": "STRING"
+                },
+                {
+                  "mode": "REQUIRED",
+                  "name": "value",
+                  "type": "STRING"
+                }
+              ],
+              "mode": "REPEATED",
+              "name": "scalars",
+              "type": "RECORD"
+            }
+          ],
+          "mode": "REQUIRED",
+          "name": "value",
+          "type": "RECORD"
+        }
+      ],
+      "mode": "REPEATED",
+      "name": "metrics",
+      "type": "RECORD"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "os",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "osversion",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "profileDate",
+      "type": "INT64"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "seq",
+      "type": "INT64"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "tz",
+      "type": "INT64"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "v",
+      "type": "INT64"
+    }
+  ],
+  "mode": "REQUIRED",
+  "type": "RECORD"
+}

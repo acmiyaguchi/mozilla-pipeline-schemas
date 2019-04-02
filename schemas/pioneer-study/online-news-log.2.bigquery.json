@@ -1,0 +1,33 @@
+{
+  "fields": [
+    {
+      "fields": [
+        {
+          "mode": "NULLABLE",
+          "name": "branch",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "details",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "timestamp",
+          "type": "INT64"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "url",
+          "type": "STRING"
+        }
+      ],
+      "mode": "REPEATED",
+      "name": "entries",
+      "type": "RECORD"
+    }
+  ],
+  "mode": "REQUIRED",
+  "type": "RECORD"
+}

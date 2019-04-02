@@ -1,0 +1,76 @@
+{
+  "fields": [
+    {
+      "mode": "NULLABLE",
+      "name": "adHocTablesDir",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "apiCall",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "apiVersion",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "detectedUri",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "detectedVersion",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "name",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "owner",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "partition",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "query",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "sourcesJson",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "sqlTableName",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "tableName",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "uri",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "version",
+      "type": "STRING"
+    }
+  ],
+  "mode": "REQUIRED",
+  "type": "RECORD"
+}

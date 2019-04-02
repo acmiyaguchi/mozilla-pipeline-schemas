@@ -1,0 +1,62 @@
+{
+  "fields": [
+    {
+      "fields": [
+        {
+          "mode": "REQUIRED",
+          "name": "key",
+          "type": "STRING"
+        },
+        {
+          "fields": [
+            {
+              "mode": "REQUIRED",
+              "name": "error_count",
+              "type": "INT64"
+            },
+            {
+              "mode": "REQUIRED",
+              "name": "error_rate",
+              "type": "FLOAT64"
+            },
+            {
+              "fields": [
+                {
+                  "mode": "REQUIRED",
+                  "name": "key",
+                  "type": "STRING"
+                },
+                {
+                  "mode": "REQUIRED",
+                  "name": "value",
+                  "type": "INT64"
+                }
+              ],
+              "mode": "REPEATED",
+              "name": "errors",
+              "type": "RECORD"
+            },
+            {
+              "mode": "REQUIRED",
+              "name": "time",
+              "type": "FLOAT64"
+            },
+            {
+              "mode": "REQUIRED",
+              "name": "total",
+              "type": "INT64"
+            }
+          ],
+          "mode": "REQUIRED",
+          "name": "value",
+          "type": "RECORD"
+        }
+      ],
+      "mode": "REPEATED",
+      "name": "results",
+      "type": "RECORD"
+    }
+  ],
+  "mode": "REQUIRED",
+  "type": "RECORD"
+}

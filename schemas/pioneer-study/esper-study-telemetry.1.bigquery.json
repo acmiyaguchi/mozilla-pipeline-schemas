@@ -1,0 +1,208 @@
+{
+  "fields": [
+    {
+      "mode": "REQUIRED",
+      "name": "appUpdateChannel",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "appVersion",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "defaultSearchEngine",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "locale",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "os",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "osVersion",
+      "type": "STRING"
+    },
+    {
+      "fields": [
+        {
+          "mode": "REQUIRED",
+          "name": "addonId",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "addonVersion",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "branch",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "packetVersion",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "pioneerUtilsVersion",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "studyName",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "testing",
+          "type": "BOOL"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "type",
+          "type": "STRING"
+        }
+      ],
+      "mode": "REQUIRED",
+      "name": "pioneerAddonMetadata",
+      "type": "RECORD"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "placesBookmarksCount",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "placesPagesCount",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "profileCreationDate",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "profileSubsessionCounter",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "searchCounts",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "spbeMaxConcurrentTabCount",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "spbeMaxConcurrentWindowCount",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "spbeNavigationAboutNewtab",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "spbeNavigationContextmenu",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "spbeNavigationSearchbar",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "spbeNavigationUrlbar",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "spbeTabOpenEventCount",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "spbeTotalUriCount",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "spbeUnfilteredUriCount",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "spbeUniqueDomainsCount",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "spbeWindowOpenEventCount",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "subsessionStartDate",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "systemCpuCores",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "systemCpuSpeedMhz",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "systemGfxMonitors1ScreenWidth",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "systemGfxMonitors1ScreenWidthZeroIndexed",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "systemMemoryMb",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "timezoneOffest",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "totalTime",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "uptime",
+      "type": "STRING"
+    }
+  ],
+  "mode": "REQUIRED",
+  "type": "RECORD"
+}

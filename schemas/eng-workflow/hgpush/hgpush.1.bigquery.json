@@ -1,0 +1,53 @@
+{
+  "fields": [
+    {
+      "mode": "REQUIRED",
+      "name": "changesetID",
+      "type": "STRING"
+    },
+    {
+      "fields": [
+        {
+          "mode": "NULLABLE",
+          "name": "additions",
+          "type": "INT64"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "changedFiles",
+          "type": "INT64"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "deletions",
+          "type": "INT64"
+        }
+      ],
+      "mode": "NULLABLE",
+      "name": "diffstat",
+      "type": "RECORD"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "landingSystem",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "pushDate",
+      "type": "INT64"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "repository",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "reviewSystemUsed",
+      "type": "STRING"
+    }
+  ],
+  "mode": "REQUIRED",
+  "type": "RECORD"
+}

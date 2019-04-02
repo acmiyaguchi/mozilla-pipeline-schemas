@@ -1,0 +1,212 @@
+{
+  "fields": [
+    {
+      "fields": [
+        {
+          "mode": "REQUIRED",
+          "name": "architecture",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "buildId",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "channel",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "displayVersion",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "name",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "platformVersion",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "vendor",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "version",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "xpcomAbi",
+          "type": "STRING"
+        }
+      ],
+      "mode": "REQUIRED",
+      "name": "application",
+      "type": "RECORD"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "clientId",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "creationDate",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "id",
+      "type": "STRING"
+    },
+    {
+      "fields": [
+        {
+          "mode": "REQUIRED",
+          "name": "branch",
+          "type": "STRING"
+        },
+        {
+          "mode": "REQUIRED",
+          "name": "id",
+          "type": "INT64"
+        },
+        {
+          "fields": [
+            {
+              "fields": [
+                {
+                  "mode": "REQUIRED",
+                  "name": "totalBlockedAudibleMedia",
+                  "type": "INT64"
+                },
+                {
+                  "mode": "REQUIRED",
+                  "name": "totalPages",
+                  "type": "INT64"
+                },
+                {
+                  "mode": "REQUIRED",
+                  "name": "totalPagesAM",
+                  "type": "INT64"
+                }
+              ],
+              "mode": "NULLABLE",
+              "name": "counters",
+              "type": "RECORD"
+            },
+            {
+              "fields": [
+                {
+                  "mode": "NULLABLE",
+                  "name": "allowAutoplay",
+                  "type": "BOOL"
+                },
+                {
+                  "mode": "REQUIRED",
+                  "name": "interact",
+                  "type": "STRING"
+                },
+                {
+                  "mode": "REQUIRED",
+                  "name": "pageId",
+                  "type": "STRING"
+                },
+                {
+                  "mode": "NULLABLE",
+                  "name": "rememberCheckbox",
+                  "type": "BOOL"
+                },
+                {
+                  "mode": "REQUIRED",
+                  "name": "responseTime",
+                  "type": "FLOAT64"
+                },
+                {
+                  "mode": "REQUIRED",
+                  "name": "timestamp",
+                  "type": "INT64"
+                }
+              ],
+              "mode": "REPEATED",
+              "name": "promptResponse",
+              "type": "RECORD"
+            },
+            {
+              "fields": [
+                {
+                  "fields": [
+                    {
+                      "mode": "REQUIRED",
+                      "name": "allowAutoplay",
+                      "type": "STRING"
+                    }
+                  ],
+                  "mode": "NULLABLE",
+                  "name": "globalSettings",
+                  "type": "RECORD"
+                },
+                {
+                  "fields": [
+                    {
+                      "mode": "REQUIRED",
+                      "name": "allowAutoplay",
+                      "type": "STRING"
+                    },
+                    {
+                      "mode": "REQUIRED",
+                      "name": "pageId",
+                      "type": "STRING"
+                    }
+                  ],
+                  "mode": "NULLABLE",
+                  "name": "pageSpecific",
+                  "type": "RECORD"
+                },
+                {
+                  "mode": "REQUIRED",
+                  "name": "timestamp",
+                  "type": "INT64"
+                }
+              ],
+              "mode": "REPEATED",
+              "name": "settingsChanged",
+              "type": "RECORD"
+            },
+            {
+              "mode": "REQUIRED",
+              "name": "type",
+              "type": "STRING"
+            }
+          ],
+          "mode": "REQUIRED",
+          "name": "payload",
+          "type": "RECORD"
+        }
+      ],
+      "mode": "REQUIRED",
+      "name": "payload",
+      "type": "RECORD"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "type",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "version",
+      "type": "FLOAT64"
+    }
+  ],
+  "mode": "REQUIRED",
+  "type": "RECORD"
+}

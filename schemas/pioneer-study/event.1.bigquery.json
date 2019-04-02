@@ -1,0 +1,11 @@
+{
+  "fields": [
+    {
+      "mode": "REQUIRED",
+      "name": "eventId",
+      "type": "STRING"
+    }
+  ],
+  "mode": "REQUIRED",
+  "type": "RECORD"
+}

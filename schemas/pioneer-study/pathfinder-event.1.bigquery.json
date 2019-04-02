@@ -1,0 +1,21 @@
+{
+  "fields": [
+    {
+      "mode": "REQUIRED",
+      "name": "context",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "eventId",
+      "type": "STRING"
+    },
+    {
+      "mode": "REQUIRED",
+      "name": "timestamp",
+      "type": "INT64"
+    }
+  ],
+  "mode": "REQUIRED",
+  "type": "RECORD"
+}
