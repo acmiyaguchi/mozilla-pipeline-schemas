@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -eou pipefail
+
+cd "$(dirname "$0")/.." || exit
+
+documents=$(find schemas/ -name "*.schema.json")
+
+for document in $documents; do
+    output="$(echo $document | sed 's/.schema.json/.avro.json/')"
+    echo "Generating $output"
+    jsonschema-transpiler --type avro "$document" | ./scripts/format-avro | jq '.' > "$output"
+done
+
+echo "Done"

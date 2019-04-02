@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+"""Format an avro schema from stdin.
+
+This script requires the avro-python3 package.
+"""
+
+import json
+import sys
+import avro.schema
+
+data = sys.stdin.read()
+schema = avro.schema.Parse(data)
+print(json.dumps(schema.to_json()))
