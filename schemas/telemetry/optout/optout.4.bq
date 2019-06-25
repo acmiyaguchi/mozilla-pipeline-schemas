@@ -213,6 +213,11 @@
   },
   {
     "mode": "NULLABLE",
+    "name": "payload",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
     "name": "sample_id",
     "type": "INT64"
   },

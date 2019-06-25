@@ -40,6 +40,11 @@
     "type": "STRING"
   },
   {
+    "mode": "REPEATED",
+    "name": "events",
+    "type": "STRING"
+  },
+  {
     "fields": [
       {
         "mode": "REQUIRED",

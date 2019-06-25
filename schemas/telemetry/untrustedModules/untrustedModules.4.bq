@@ -101,6 +101,11 @@
                   },
                   {
                     "mode": "NULLABLE",
+                    "name": "foreignInstall",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
                     "name": "hasBinaryComponents",
                     "type": "BOOL"
                   },
@@ -138,6 +143,16 @@
                     "mode": "NULLABLE",
                     "name": "updateDay",
                     "type": "INT64"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "userDisabled",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "version",
+                    "type": "STRING"
                   }
                 ],
                 "mode": "REQUIRED",
@@ -175,6 +190,11 @@
               },
               {
                 "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "applyBackgroundUpdates",
+                    "type": "STRING"
+                  },
                   {
                     "mode": "NULLABLE",
                     "name": "userDisabled",
@@ -262,6 +282,11 @@
               {
                 "mode": "NULLABLE",
                 "name": "description",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "foreignInstall",
                 "type": "STRING"
               },
               {
@@ -645,6 +670,11 @@
             "mode": "NULLABLE",
             "name": "update",
             "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "userPrefs",
+            "type": "STRING"
           }
         ],
         "mode": "REQUIRED",
@@ -1055,6 +1085,11 @@
               },
               {
                 "mode": "NULLABLE",
+                "name": "version",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
                 "name": "windowsBuildNumber",
                 "type": "FLOAT64"
               },
@@ -1252,6 +1287,23 @@
   },
   {
     "fields": [
+      {
+        "fields": [
+          {
+            "mode": "REPEATED",
+            "name": "memoryMap",
+            "type": "STRING"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "stacks",
+            "type": "STRING"
+          }
+        ],
+        "mode": "REQUIRED",
+        "name": "combinedStacks",
+        "type": "RECORD"
+      },
       {
         "mode": "REQUIRED",
         "name": "errorModules",

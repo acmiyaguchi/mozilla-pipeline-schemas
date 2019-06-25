@@ -265,5 +265,10 @@
     "mode": "REQUIRED",
     "name": "submission_timestamp",
     "type": "TIMESTAMP"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "type",
+    "type": "STRING"
   }
 ]

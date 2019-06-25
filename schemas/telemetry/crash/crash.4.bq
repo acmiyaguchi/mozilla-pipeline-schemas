@@ -96,6 +96,11 @@
                   },
                   {
                     "mode": "NULLABLE",
+                    "name": "foreignInstall",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
                     "name": "hasBinaryComponents",
                     "type": "BOOL"
                   },
@@ -133,6 +138,16 @@
                     "mode": "NULLABLE",
                     "name": "updateDay",
                     "type": "INT64"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "userDisabled",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "version",
+                    "type": "STRING"
                   }
                 ],
                 "mode": "REQUIRED",
@@ -170,6 +185,11 @@
               },
               {
                 "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "applyBackgroundUpdates",
+                    "type": "STRING"
+                  },
                   {
                     "mode": "NULLABLE",
                     "name": "userDisabled",
@@ -257,6 +277,11 @@
               {
                 "mode": "NULLABLE",
                 "name": "description",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "foreignInstall",
                 "type": "STRING"
               },
               {
@@ -640,6 +665,11 @@
             "mode": "NULLABLE",
             "name": "update",
             "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "userPrefs",
+            "type": "STRING"
           }
         ],
         "mode": "REQUIRED",
@@ -1047,6 +1077,11 @@
                 "mode": "NULLABLE",
                 "name": "servicePackMinor",
                 "type": "FLOAT64"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "version",
+                "type": "STRING"
               },
               {
                 "mode": "NULLABLE",

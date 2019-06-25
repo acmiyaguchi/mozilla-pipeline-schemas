@@ -172,6 +172,23 @@
     "type": "RECORD"
   },
   {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "key",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "value",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "modules",
+    "type": "RECORD"
+  },
+  {
     "mode": "NULLABLE",
     "name": "normalized_app_name",
     "type": "STRING"

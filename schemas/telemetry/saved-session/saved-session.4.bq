@@ -101,6 +101,11 @@
                   },
                   {
                     "mode": "NULLABLE",
+                    "name": "foreignInstall",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
                     "name": "hasBinaryComponents",
                     "type": "BOOL"
                   },
@@ -138,6 +143,16 @@
                     "mode": "NULLABLE",
                     "name": "updateDay",
                     "type": "INT64"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "userDisabled",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "version",
+                    "type": "STRING"
                   }
                 ],
                 "mode": "REQUIRED",
@@ -175,6 +190,11 @@
               },
               {
                 "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "applyBackgroundUpdates",
+                    "type": "STRING"
+                  },
                   {
                     "mode": "NULLABLE",
                     "name": "userDisabled",
@@ -262,6 +282,11 @@
               {
                 "mode": "NULLABLE",
                 "name": "description",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "foreignInstall",
                 "type": "STRING"
               },
               {
@@ -645,6 +670,11 @@
             "mode": "NULLABLE",
             "name": "update",
             "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "userPrefs",
+            "type": "STRING"
           }
         ],
         "mode": "REQUIRED",
@@ -1055,6 +1085,11 @@
               },
               {
                 "mode": "NULLABLE",
+                "name": "version",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
                 "name": "windowsBuildNumber",
                 "type": "FLOAT64"
               },
@@ -1253,6 +1288,36 @@
   {
     "fields": [
       {
+        "mode": "REPEATED",
+        "name": "UIMeasurements",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "addonDetails",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "addonHistograms",
+        "type": "STRING"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "childPayloads",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "chromeHangs",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "fileIOReports",
+        "type": "STRING"
+      },
+      {
         "fields": [
           {
             "mode": "REQUIRED",
@@ -1429,9 +1494,89 @@
         "type": "RECORD"
       },
       {
+        "mode": "NULLABLE",
+        "name": "lateWrites",
+        "type": "STRING"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "log",
+        "type": "STRING"
+      },
+      {
         "fields": [
           {
             "fields": [
+              {
+                "mode": "REPEATED",
+                "name": "events",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "slices",
+                        "type": "STRING"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "times",
+                            "type": "STRING"
+                          }
+                        ],
+                        "mode": "REPEATED",
+                        "name": "slices_list",
+                        "type": "RECORD"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "totals",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "random",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "slices",
+                        "type": "STRING"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "times",
+                            "type": "STRING"
+                          }
+                        ],
+                        "mode": "REPEATED",
+                        "name": "slices_list",
+                        "type": "RECORD"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "totals",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "worst",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "gc",
+                "type": "RECORD"
+              },
               {
                 "fields": [
                   {
@@ -1594,6 +1739,52 @@
                 ],
                 "mode": "REPEATED",
                 "name": "keyedHistograms",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "REQUIRED",
+                    "name": "key",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "REQUIRED",
+                        "name": "key",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "REQUIRED",
+                        "name": "value",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "value",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "keyedScalars",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "REQUIRED",
+                    "name": "key",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "REQUIRED",
+                    "name": "value",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "scalars",
                 "type": "RECORD"
               }
             ],
@@ -1604,6 +1795,76 @@
           {
             "fields": [
               {
+                "mode": "REPEATED",
+                "name": "events",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "slices",
+                        "type": "STRING"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "times",
+                            "type": "STRING"
+                          }
+                        ],
+                        "mode": "REPEATED",
+                        "name": "slices_list",
+                        "type": "RECORD"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "totals",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "random",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "slices",
+                        "type": "STRING"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "times",
+                            "type": "STRING"
+                          }
+                        ],
+                        "mode": "REPEATED",
+                        "name": "slices_list",
+                        "type": "RECORD"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "totals",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "worst",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "gc",
+                "type": "RECORD"
+              },
+              {
                 "fields": [
                   {
                     "mode": "REQUIRED",
@@ -1765,6 +2026,52 @@
                 ],
                 "mode": "REPEATED",
                 "name": "keyedHistograms",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "REQUIRED",
+                    "name": "key",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "REQUIRED",
+                        "name": "key",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "REQUIRED",
+                        "name": "value",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "value",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "keyedScalars",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "REQUIRED",
+                    "name": "key",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "REQUIRED",
+                    "name": "value",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "scalars",
                 "type": "RECORD"
               }
             ],
@@ -1775,6 +2082,76 @@
           {
             "fields": [
               {
+                "mode": "REPEATED",
+                "name": "events",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "slices",
+                        "type": "STRING"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "times",
+                            "type": "STRING"
+                          }
+                        ],
+                        "mode": "REPEATED",
+                        "name": "slices_list",
+                        "type": "RECORD"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "totals",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "random",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "slices",
+                        "type": "STRING"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "times",
+                            "type": "STRING"
+                          }
+                        ],
+                        "mode": "REPEATED",
+                        "name": "slices_list",
+                        "type": "RECORD"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "totals",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "worst",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "gc",
+                "type": "RECORD"
+              },
+              {
                 "fields": [
                   {
                     "mode": "REQUIRED",
@@ -1936,6 +2313,52 @@
                 ],
                 "mode": "REPEATED",
                 "name": "keyedHistograms",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "REQUIRED",
+                    "name": "key",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "REQUIRED",
+                        "name": "key",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "REQUIRED",
+                        "name": "value",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "value",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "keyedScalars",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "REQUIRED",
+                    "name": "key",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "REQUIRED",
+                    "name": "value",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "scalars",
                 "type": "RECORD"
               }
             ],
@@ -1950,8 +2373,33 @@
       },
       {
         "mode": "NULLABLE",
+        "name": "simpleMeasurements",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "slowSQL",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "slowSQLStartup",
+        "type": "STRING"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "threadHangStats",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
         "name": "ver",
         "type": "INT64"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "webrtc",
+        "type": "STRING"
       }
     ],
     "mode": "NULLABLE",

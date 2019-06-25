@@ -20,6 +20,11 @@
     "type": "STRING"
   },
   {
+    "mode": "REPEATED",
+    "name": "events",
+    "type": "STRING"
+  },
+  {
     "mode": "REQUIRED",
     "name": "locale",
     "type": "STRING"

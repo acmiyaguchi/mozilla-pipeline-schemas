@@ -343,6 +343,52 @@
             "mode": "REPEATED",
             "name": "keyedHistograms",
             "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "REQUIRED",
+                "name": "key",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "REQUIRED",
+                    "name": "key",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "REQUIRED",
+                    "name": "value",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "value",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "keyedScalars",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "REQUIRED",
+                "name": "key",
+                "type": "STRING"
+              },
+              {
+                "mode": "REQUIRED",
+                "name": "value",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "scalars",
+            "type": "RECORD"
           }
         ],
         "mode": "REQUIRED",
